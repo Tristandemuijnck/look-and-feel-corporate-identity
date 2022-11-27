@@ -1,0 +1,34 @@
+/* CSS Variabelen */
+:root{
+
+    /* Standaard kleuren */
+    --magenta: #B9005F;
+    --gradient-magenta: linear-gradient(to right, #B9005F , #E30059);
+    --groen: #25AE93;
+    --blauw: #606EB3;
+    --grijs: #f3f3f3;
+    --wit: #fff;
+
+    /* Button styling */
+    --button-padding: 0.8em 1.6em;
+    --button-border-radius: 0.3em;
+    
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Font import */
+@font-face {
+    font-family: 'FiraSansRegular';
+    src: url('./fonts/firasans-regular.ttf');
+}
+
+@font-face {
+    font-family: 'FiraSansMedium';
+    src: url('./fonts/firasans-medium.ttf');
+}
