@@ -1,18 +1,16 @@
 /* CSS Variabelen */
-:root{
-
-    /* Standaard kleuren */
-    --magenta: #B9005F;
-    --gradient-magenta: linear-gradient(to right, #B9005F , #E30059);
-    --groen: #25AE93;
-    --blauw: #606EB3;
+:root {
+  /* Standaard kleuren */
+    --magenta: #b9005f;
+    --gradient-magenta: linear-gradient(to right, #b9005f, #e30059);
+    --groen: #25ae93;
+    --blauw: #606eb3;
     --grijs: #f3f3f3;
     --wit: #fff;
 
-    /* Button styling */
+  /* Button styling */
     --button-padding: 0.8em 1.6em;
     --button-border-radius: 0.3em;
-    
 }
 
 /* Reset */
@@ -22,13 +20,84 @@
     box-sizing: border-box;
 }
 
+ul{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
 /* Font import */
 @font-face {
-    font-family: 'FiraSansRegular';
-    src: url('./fonts/firasans-regular.ttf');
+    font-family: FiraSansRegular;
+    src: url("./fonts/firasans-regular.ttf");
 }
 
 @font-face {
-    font-family: 'FiraSansMedium';
-    src: url('./fonts/firasans-medium.ttf');
+    font-family: FiraSansMedium;
+    src: url("./fonts/firasans-medium.ttf");
 }
+
+body {
+    background-color: var(--grijs);
+    height: 100vh;
+    font: 100%/1.4 FiraSansRegular, sans-serif;
+}
+
+/* ============================================================================= */
+/* Mobile styling ============================================================== */
+/* ============================================================================= */
+
+@media (min-width: 320px) and (max-width: 768px) {
+
+
+    /* Header styling */
+    .nav-container{
+        width: 100vw;
+        background-color: var(--wit);
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1em;
+    }
+
+    header #logo{
+        width: 9em;
+        height: auto;
+    }
+
+    header #primaire-nav ul{
+        display: flex;
+    }
+
+    header #primaire-nav ul li{
+        padding: 0.4em;
+    }
+
+    header a{
+        color: var(--magenta);
+        font-family: 'Fira Sans Regular';
+        font-size: 1rem;
+    }
+
+    /* Banner image */
+    .banner-image img{
+        width: 100%;
+        height: auto;
+        overflow-x: hidden;
+    }
+
+    /* Hero banner */
+    #hero{
+        margin-top: -0.4em;
+        background: var(--gradient-magenta);
+        display: flex;
+        text-align: left;
+        padding: 2em;
+    }
+
+} /* Einde mobile styling */
