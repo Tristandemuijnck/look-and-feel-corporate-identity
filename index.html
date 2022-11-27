@@ -36,10 +36,10 @@
         <section id="hero">
             <div class="hero-content">
                 <h1 class="hero-title">Samen voor toegankelijkheid!</h1>
-                <p class="hero-subtitle">Verbeter de toegankelijkheid van uw website met deze tool</p>
+                <p class="hero-subtitle">Verbeter de toegankelijkheid van uw website met deze tool.</p>
                 <div class="hero-buttons">
                     <button class="hero-btn-cta">
-                        <a href="richtlijnen.html" class="hero-btn-text">Doe de check</a>
+                        <a href="richtlijnen.html">Doe de check</a>
                     </button>
                     <button class="hero-btn-alt">
                         <a href="#richtlijnen">Meer info</a>
@@ -49,34 +49,35 @@
         </section>
 
         <!-- Richtlijnen section -->
-        <article id="richtlijnen">
-            <article id="waarneembaar">
+        <section id="richtlijnen">
+            <span class="spacing-span"></span>
+            <article id="waarneembaar" class="richtlijn-card green">
                 <h2 class="title-green">Waarneembaar</h2>
-                <p class="richtlijn-p-green">
+                <p class="p-green">
                     Om te voldoen aan WCAG 2.1 Principe 1: Waarneembaar moet ervoor worden gezorgd 
                     dat mensen de website (en elementen op de website) kunnen ervaren en gebruiken 
                     met de zintuigen die voor hen beschikbaar zijn.
                 </p>
             </article>
-            <article id="Robuust">
+            <article id="Robuust" class="richtlijn-card white">
                 <h2 class="title-white">Robuust</h2>
-                <p class="richtlijn-p-white">
+                <p class="p-white">
                     Om te voldoen aan WCAG 2.1 Principe 4: Robuust moet ervoor worden gezorgd 
                     dat de content betrouwbaar kan worden geïnterpreteerd door een breed 
                     scala van user agents, inclusief hulpmiddelen.
                 </p>
             </article>
-            <article id="Begrijpelijk">
+            <article id="Begrijpelijk" class="richtlijn-card green">
                 <h2 class="title-green">Begrijpelijk</h2>
-                <p class="richtlijn-p-green">
+                <p class="p-green">
                     Om te voldoen aan WCAG 2.1 Principe 3: Begrijpelijk moet ervoor worden gezorgd 
                     dat mensen en software de content kunnen begrijpen en snappen hoe de 
                     website werkt.
                 </p>
             </article>
-            <article id="Bedienbaar">
+            <article id="Bedienbaar" class="richtlijn-card white">
                 <h2 class="title-white">Bedienbaar</h2>
-                <p class="richtlijn-p-white">
+                <p class="p-white">
                     Om te voldoen aan WCAG 2.1 Principe 2: Bedienbaar moet ervoor worden gezorgd 
                     dat mensen content op de website kunnen vinden en gebruiken, ongeacht de 
                     manier waarop ze er gebruik van maken. Zoals bijvoorbeeld 
@@ -87,14 +88,14 @@
 
         <!-- Waarom section -->
         <section id="waarom-toegankelijk">
-            <h2 class="title-green">Waarom toegankelijkheid?</h2>
+            <h2 class="title-green">Waarom toegankelijk?</h2>
             <div class="cards">
                 <div class="card">
                     <h3 class="card-title">Voor iedereen</h3>
                     <p class="card-text">
                         Toegankelijkheid is niet alleen
                         bedoeld voor permanent
-                        mindervalide mensen. Het is
+                        mindervalide mensen. Het is bijvoorbeeld
                         ook bedoeld voor mensen
                         die mogelijk een arm niet
                         kunnen gebruiken, omdat ze
@@ -128,9 +129,13 @@
 
         <!-- Call to action button -->
         <section id="call-to-action-hero">
-            <h2 class="title-green">Voldoet uw site al aan de eisen?</h2>
-            <p class="call-to-action">Doe nu de check!</p>
-            <button class="cta-btn">Toolgankelijkheid</button>
+            <h2 class="title-white title-small">Voldoet uw site al aan de eisen?</h2>
+            <div class="check-container">
+                <p class="call-to-action">Doe nu <br>de check!</p>
+                <button class="cta-btn">
+                    <a href="richtlijnen.html">Toolgankelijkheid</a>
+                </button>
+            </div>
         </section>
     </main>
 

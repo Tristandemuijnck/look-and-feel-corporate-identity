@@ -29,20 +29,16 @@ a{
 }
 
 /* Font import */
-@font-face {
-    font-family: FiraSansRegular;
-    src: url("./fonts/firasans-regular.ttf");
-}
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500&display=swap');
 
-@font-face {
-    font-family: FiraSansMedium;
-    src: url("./fonts/firasans-medium.ttf");
+html{
+    scroll-behavior: smooth;
 }
 
 body {
     background-color: var(--grijs);
-    height: 100vh;
-    font: 100%/1.4 FiraSansRegular, sans-serif;
+    height: 100%;
+    font: 100%/1.4 'Fira Sans Regular', sans-serif;
 }
 
 /* ============================================================================= */
@@ -51,14 +47,23 @@ body {
 
 @media (min-width: 320px) and (max-width: 768px) {
 
+    :root{
+        /* Button styling */
+        --button-padding: 0.5em 0.8em;
+        --button-border-radius: 0.3em;
+    }
 
     /* Header styling */
     .nav-container{
-        width: 100vw;
+        width: 100%;
         background-color: var(--wit);
+        position: sticky;
+        top: 0;
+        left: 0;
     }
 
     header {
+        position: relative;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -80,7 +85,8 @@ body {
 
     header a{
         color: var(--magenta);
-        font-family: 'Fira Sans Regular';
+        font-family: 'Fira Sans';
+        font-weight: 400;
         font-size: 1rem;
     }
 
@@ -97,7 +103,240 @@ body {
         background: var(--gradient-magenta);
         display: flex;
         text-align: left;
+        padding: 1.5em;
+    }
+
+    .hero-title{
+        color: var(--wit);
+        font-family: 'Fira Sans';
+        font-weight: 500;
+        margin-bottom: 0.5em;
+        font-size: 2rem;
+        line-height: 2.8rem;
+    }
+
+    .hero-subtitle{
+        color: var(--wit);
+        font-family: 'Fira Sans';
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 1.4rem;
+    }
+
+    .hero-buttons{
+        display: flex;
+        flex-direction: row;
+        gap: 0.8em;
+        margin-top: 1em;
+    }
+
+    .hero-btn-cta{
+        background-color: var(--blauw);
+        border: none;
+        padding: var(--button-padding);
+        border-radius: var(--button-border-radius);
+    }
+
+    .hero-btn-cta a{
+        color: var(--wit);
+        font-family: 'Fira Sans';
+        font-weight: 400;
+    }
+
+    .hero-btn-alt{
+        background-color: var(--wit);
+        border: none;
+        padding: var(--button-padding);
+        border-radius: var(--button-border-radius);
+    }
+
+    .hero-btn-alt a{
+        color: var(--magenta);
+        font-family: 'Fira Sans';
+        font-weight: 400;
+    }
+
+    /* Richtlijnen section */
+    .spacing-span{
+        display: block;
+        height: 4.68em;
+        margin-top: -4.68em;
+        visibility: hidden;
+    }
+    
+    .richtlijn-card{
         padding: 2em;
+    }
+
+    .green{
+        background-color: var(--groen);
+    }
+
+    .white{
+        background-color: var(--wit);
+    }
+
+    .title-green{
+        color: var(--wit);
+        margin-bottom: 0.5em;
+        font-family: 'Fira Sans';
+        font-weight: 500;
+    }
+
+    .title-white{
+        color: var(--magenta);
+        margin-bottom: 0.5em;
+        font-family: 'Fira Sans';
+        font-weight: 500;
+    }
+
+    .p-green{
+        color: var(--wit);
+        font-family: 'Fira Sans';
+        font-weight: 400;
+    }
+
+    .p-white{
+        color: var(--magenta);
+        font-family: 'Fira Sans';
+        font-weight: 400;
+    }
+
+    /* Waarom section */
+    #waarom-toegankelijk{
+        padding: 2em 1em;
+        background-color: var(--blauw);
+    }
+
+    .cards{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 2em;
+        margin-top: 2em;
+    }
+
+    .card{
+        display: flex;
+        flex-direction: column;
+        background-color: var(--wit);
+        padding: 2em;
+        border-radius: var(--button-border-radius);
+    }
+
+    .card-title{
+        color: var(--blauw);
+        font-family: 'Fira Sans';
+        font-weight: 500;
+        margin-bottom: 0.5em;
+        text-align: center;
+    }
+
+    /* Call to action hero */
+    #call-to-action-hero{
+        padding: 3em 2em;
+        background-color: var(--wit);
+    }
+
+    .title-small{
+        font-weight: 400;
+    }
+
+    .check-container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 2em;
+    }
+
+    .call-to-action{
+        color: var(--magenta);
+        font-family: 'Fira Sans';
+        font-weight: 500;
+        font-size: 1.4rem;
+        float: left;
+    }
+
+    .cta-btn{
+        background: var(--gradient-magenta);
+        color: var(--wit);
+        padding: var(--button-padding);
+        border: none;
+        border-radius: var(--button-border-radius);
+    }
+
+    .cta-btn a{
+        color: var(--wit);
+        font-family: 'Fira Sans';
+        font-weight: 400;
+        font-size: 1rem;
+    }
+
+    /* Footer */
+    #footer{
+        position: relative;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: var(--magenta);
+    }
+
+    #footer::before{
+        content: "";
+        display: block;
+        width: 100%;
+        height: 3vh;
+        background-image: linear-gradient(90deg, #b9005f01 0 5%, var(--magenta) 95%);
+        margin-top: -1em;
+    }
+
+    .contact-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+        padding: 2em;
+    }
+
+    .adres{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        margin: 1em 0;
+    }
+
+    .adres-text{
+        padding-left: 0.2em;
+    }
+
+    .contact-text{
+        color: var(--wit);
+    }
+
+    .footer-svg{
+        width: 0.8em;
+        height: 0.8em;
+        margin-top: 3px;
+        fill: var(--wit);
+    }
+
+    .footer-svg-phone{
+        width: 0.8em;
+        margin-top: 0.3em;
+        margin-right: 0.2em;
+        margin-bottom: 0.4em;
+        fill: var(--wit);
+    }
+
+    .svg-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
 } /* Einde mobile styling */
