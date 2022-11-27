@@ -1,19 +1,26 @@
-> _Fork_ deze leertaak en ga aan de slag. 
-Onderstaande outline ga je gedurende deze taak in jouw eigen GitHub omgeving uitwerken. 
-De instructie vind je in: [docs/INSTRUCTIONS.md](docs/INSTRUCTIONS.md)
+# Toolgankelijkheid Vervoerregio Amsterdam
 
-# Titel
-<!-- Geef je project een titel en schrijf in één zin wat het is -->
+## Titel
+Toolgankelijkheid - Een overzicht van toegankelijkheidsverbeteringen voor het verbeteren van toegankelijkheid op een website of app.
 
 ## Beschrijving
-<!-- In de Beschrijving staat hoe je project er uit ziet, hoe het werkt en wat je er mee kan. -->
-<!-- Voeg een mooie poster visual toe 📸 -->
-<!-- Voeg een link toe naar Github Pages 🌐-->
+Dit is de repository van mijn uitvoering van look-and-feel-corporate-identity - Vervoerregio Amsterdam.
+
+De tool is gemaakt voor de volgende user stories: 
+> "Als organisatie wil ik een overzicht van toegankelijkheidsverbeteringen kunnen bekijken, zodat ik een gevoel kan krijgen wat er moet gebeuren om mijn website/app toegankelijker te maken op het terrein van waarneembaarheid, robuustheid, begrijpelijkheid en bedienbaarheid."
+
+> "Als bezoeker van de tool wil ik contactinformatie kunnen achterhalen over wie de eigenaar/maker van deze tool is."
+
+> "Als vervoerregio wil ik de urgentie van de wettelijke verplichting duidelijk maken aan lezers"
+
+### Preview
+TODO
 
 ## Kenmerken
 <!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met Javascript gedaan en hoe? Misschien heb je een framwork of library gebruikt? -->
 
-## Bronnen
+## Live versie
+Voor een live versie van het project: http://tristanva.student.fdnd.nl/
 
 ## Licentie
 
