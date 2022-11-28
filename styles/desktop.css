@@ -1,0 +1,170 @@
+/* ============================================================================= */
+/* Desktop styling ============================================================== */
+/* ============================================================================= */
+
+@media (min-width: 769px) {
+    @import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500&display=swap");
+
+    /* Header styling */
+    header {
+        width: 100%;
+        height: auto;
+        display: block;
+        position: sticky;
+        top: 0;
+    }
+
+    header #logo {
+        width: auto;
+        height: 5em;
+        border: 4px solid #fff;
+        border-radius: 0 0 3em 0;
+        background-color: #fff;
+        padding: 0.5em 1.2em 0.5em 3.2em;
+        position: absolute;
+        z-index: 1;
+    }
+
+    header #logo::after {
+        width: 1em;
+        aspect-ratio: 1/1;
+        background-color: #f72e96;
+    }
+
+    #logo svg {
+        left: 15.8em;
+        position: relative;
+        z-index: -9;
+        height: 6em;
+        fill: #fff;
+    }
+
+    #after-curve {
+        width: 100vw;
+        height: 2.5em;
+        background-color: #fff;
+        float: inline-end;
+        position: inherit;
+    }
+
+    #after-curve::before {
+        content: "";
+        width: 3.5em;
+        height: 3.5em;
+        position: absolute;
+        top: 2.5em;
+        left: 15.8em;
+        box-shadow: 0.1em -1em 0 -0.2em white;
+        border-radius: 60% 0 0 0;
+    }
+
+    #curve {
+        width: 1em;
+        height: 2em;
+        display: block;
+        background-color: sierra;
+    }
+
+    /* Navigatie */
+    .topnav{
+        width: auto;
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 0.6em;
+        padding-right: 2em;
+    }
+
+    .topnav a{
+        color: var(--magenta);
+        padding: 0.8em 0 0.8em 0.5em;
+    }
+
+    #primaire-nav{
+        display: block;
+        
+    }
+
+    .menu-toggle{
+        display: none;
+    }
+
+    /* Banner image */
+    .banner-image img{
+        width: 100%;
+        height: auto;
+        overflow-x: hidden;
+    }
+
+    /* Hero banner */
+    #hero{
+        margin-top: -0.4em;
+        background: var(--gradient-magenta);
+        display: flex;
+        text-align: left;
+        padding: 2em;
+        align-items: flex-start;
+    }
+
+    .hero-content{
+        width: 100%;
+    }
+
+    .hero-title{
+        color: var(--wit);
+        font-family: 'Fira Sans', sans-serif;
+        font-weight: 500;
+        margin-bottom: 0.5em;
+        font-size: 2rem;
+        line-height: 2.8rem;
+        width: auto;
+    }
+
+    .hero-subtitle{
+        color: var(--wit);
+        font-family: 'Fira Sans', sans-serif;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 1.4rem;
+    }
+
+    .hero-buttons{
+        display: flex;
+        flex-direction: row;
+        gap: 0.8em;
+        margin-top: 1em;
+    }
+
+    .hero-btn-cta{
+        background-color: var(--blauw);
+        border: none;
+        padding: var(--button-padding);
+        border-radius: var(--button-border-radius);
+        box-shadow: 1px 1px 5px -1px #000000;
+    }
+
+    .hero-btn-cta a{
+        color: var(--wit);
+        font-family: 'Fira Sans', sans-serif;
+        font-weight: 400;
+    }
+
+    .hero-btn-alt{
+        background-color: var(--wit);
+        border: none;
+        padding: var(--button-padding);
+        border-radius: var(--button-border-radius);
+        box-shadow: 1px 1px 5px -1px #000000;
+    }
+
+    .hero-btn-alt a{
+        color: var(--magenta);
+        font-family: 'Fira Sans', sans-serif;
+        font-weight: 400;
+    }
+
+    .access-icon{
+        width: 10em;
+        height: auto;
+    }
+}
