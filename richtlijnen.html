@@ -1,0 +1,1037 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/mobile.css">
+    <link rel="stylesheet" href="./styles/desktop.css">
+    <link rel="shortcut icon" href="./assets/va-favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Toolgankelijkheid</title>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <img src="./assets/logo.png" alt="Logo Vervoerregio Amsterdam" id="logo">
+        <div id="after-curve"></div>
+        <div class="topnav">
+            <nav id="primaire-nav">
+                <a href="index.html">Home</a>
+                <a href="richtlijnen.html">Checklist</a>
+            </nav>
+            <div class="menu-toggle">
+                <a href="javascript:void(0);" id="icon" onclick="toggleMenu()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+    
+    
+    <!-- Banner -->
+    <div class="banner-image">
+        <img src="./assets/banner.png" alt="Banner image" width="1280" height="270">
+    </div>
+
+    <!-- Main content -->
+    <main class="main-content">
+
+        <!-- Hero banner -->
+        <section id="hero">
+            <div class="hero-content">
+                <h1 class="hero-title">Checklist</h1>
+                <p class="hero-subtitle">Gebruik deze checklist om uw website stap voor stap toegankelijk te maken volgens de WCAG richtlijnen.</p>
+                <div class="hero-buttons">
+                    <button class="hero-btn-cta">
+                        <a href="#checklist">Begin hier!</a>
+                    </button>
+                </div>
+            </div>
+            <!-- SVG CHECKLIST, class access-icon -->
+            
+        </section>
+
+        <!-- Richtlijnen section -->
+        <section id="checklist">
+            <span class="spacing-span"></span>
+
+            <!-- Waarneembaar article -->
+            <article id="waarneembaar" class="richtlijn-card-main white">
+                <div class="rl-header">
+                    <h2 class="title-white">Waarneembaar</h2>
+                    <div class="rl-progress">
+                        <svg class="rl-icon" xmlns="http://www.w3.org/2000/svg" width="56.678" height="36.465" viewBox="0 0 56.678 36.465">
+                            <path id="XMLID_7_" d="M183.66-21.468A31.115,31.115,0,0,0,171.6-32.593a14.135,14.135,0,0,1,1.959,7.107,13.535,13.535,0,0,1-4.118,10,13.535,13.535,0,0,1-10,4.118,13.535,13.535,0,0,1-10-4.118,13.535,13.535,0,0,1-4.118-10,13.174,13.174,0,0,1,1.959-7.107,30.916,30.916,0,0,0-12.066,11.125,32.341,32.341,0,0,0,10.517,10.306,25.687,25.687,0,0,0,13.7,3.808,25.786,25.786,0,0,0,13.7-3.808A32.2,32.2,0,0,0,183.66-21.468ZM160.889-33.623a1.2,1.2,0,0,0-.41-1.03,1.32,1.32,0,0,0-1.03-.41,9.253,9.253,0,0,0-6.8,2.779,9.253,9.253,0,0,0-2.779,6.8,1.2,1.2,0,0,0,.41,1.03,1.805,1.805,0,0,0,1.029.41,1.2,1.2,0,0,0,1.03-.41,1.32,1.32,0,0,0,.41-1.03,6.005,6.005,0,0,1,1.959-4.638,6.557,6.557,0,0,1,4.638-1.959,1.2,1.2,0,0,0,1.03-.41A1.69,1.69,0,0,0,160.889-33.623Zm26.789,12.155a4.339,4.339,0,0,1-.62,2.159A33.223,33.223,0,0,1,175.1-7.663a31.154,31.154,0,0,1-15.764,4.428,29.943,29.943,0,0,1-15.764-4.428A34.9,34.9,0,0,1,131.62-19.309a4.339,4.339,0,0,1-.62-2.159,4.339,4.339,0,0,1,.62-2.159,33.223,33.223,0,0,1,11.956-11.646A31.154,31.154,0,0,1,159.339-39.7,29.943,29.943,0,0,1,175.1-35.272a34.9,34.9,0,0,1,11.956,11.646A4.339,4.339,0,0,1,187.678-21.468Z" transform="translate(-131 39.7)" fill="#b9005f"/>
+                        </svg>
+                        <p class="rl-count">0/7</p>
+                    </div>
+                </div>
+
+                <!-- Checklist cards -->
+                <div class="rl-cards">
+
+                    <!-- Card 1 -->
+                    <div class="rl-card">
+                        <div class="rl-card-content-wrapper">
+                            <div class="rl-card-content">
+                                <input type="checkbox" class="rl-cb" name="richtlijn-cb" id="cb1">
+                                <div class="rl-card-inner-content-wrapper">
+                                    <h3 class="rl-card-title">Ondertiteling</h3>
+                                    <p class="rl-card-ondertitel">Filmpjes hebben een ondertiteling met de gesproken tekst en andere geluiden.</p>
+                                    <button id="ondertiteling-button" class="rl-card-btn" onclick="switchDisplay('ondertiteling-extra', 'ondertiteling-button')">Meer info</button>
+                                </div>
+                            </div>
+                            <div id="ondertiteling-extra" class="rl-card-extra" style="display: none;">
+                                <div class="rl-card-uitleg">
+                                    <h3 class="rl-card-extra-title">Uitleg</h3>
+                                    <p class="rl-card-extra-text">Ondertiteling met de gesproken tekst en andere geluiden zorgt ervoor dat gebruikers met een auditieve beperking het filmpje kunnen volgen. Bovendien is een videobestand pas doorzoekbaar voor Google en andere zoekmachines als er audiodescriptie en ondertiteling aan is toegevoegd.</p>
+                                </div>
+                                <div class="rl-card-tips">
+                                    <h3 class="rl-card-extra-title">Tips</h3>
+                                    <p class="rl-card-extra-text">De ene mediaplayer biedt meer toegankelijkheidsopties dan de andere. Kies voor multimediasoftware die is ingericht op toegankelijkheid. Daarnaast is Scribit.pro een handig online programma waarmee je video’s eenvoudig  kunt voorzien van ondertiteling, audiodescriptie en een tekstalternatief.</p>
+                                </div>
+                                <div class="rl-card-code">
+                                    <h3 class="rl-card-extra-title">Code</h3>
+                                    <p class="rl-card-extra-text"><code>Voorbeeld code</code></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="rl-card">
+                        <div class="rl-card-content-wrapper">
+                            <div class="rl-card-content">
+                                <input type="checkbox" class="rl-cb" name="richtlijn-cb" id="cb2">
+                                <div class="rl-card-inner-content-wrapper">
+                                    <h3 class="rl-card-title">Audiobeschrijving</h3>
+                                    <p class="rl-card-ondertitel">Filmpjes en bewegend beeld hebben (indien nodig) een audiobeschrijving.</p>
+                                    <button id="audiobeschrijving-button" class="rl-card-btn" onclick="switchDisplay('audiobeschrijving-extra', 'audiobeschrijving-button')">Meer info</button>
+                                </div>
+                            </div>
+                            <div id="audiobeschrijving-extra" class="rl-card-extra" style="display: none;">
+                                <div class="rl-card-uitleg">
+                                    <h3 class="rl-card-extra-title">Uitleg</h3>
+                                    <p class="rl-card-extra-text">In een audiobeschrijving vertelt een stem belangrijke visuele details die je niet kunt afleiden uit dat wat te horen is. Dat kan bijvoorbeeld gaan om handelingen, personages en scène veranderingen, maar ook om tekst die op het scherm te zien is. De audiobeschrijving is dus een aanvulling op wat al te horen is. De stem van de audiobeschrijving vertelt op de momenten dat er pauzes zijn in het filmpje.</p>
+                                </div>
+                                <div class="rl-card-tips">
+                                    <h3 class="rl-card-extra-title">Tips</h3>
+                                    <p class="rl-card-extra-text">Als alle belangrijke visuele details ook af te leiden zijn uit het geluid is een audiobeschrijving niet verplicht. Bovendien kun je allen alleen een audiobeschrijving toevoegen als de audiotrack van de video zelf voldoende ‘rustmomenten’ heeft. De audiobeschrijving mag immers alleen tijdens die rustmomenten te horen zijn, omdat er anders twee stemmen door elkaar klinken.</p>
+                                </div>
+                                <div class="rl-card-code">
+                                    <h3 class="rl-card-extra-title">Code</h3>
+                                    <p class="rl-card-extra-text"><code>Voorbeeld code</code></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="rl-card">
+                        <div class="rl-card-content-wrapper">
+                            <div class="rl-card-content">
+                                <input type="checkbox" class="rl-cb" name="richtlijn-cb" id="cb3">
+                                <div class="rl-card-inner-content-wrapper">
+                                    <h3 class="rl-card-title">Aanwijzingen</h3>
+                                    <p class="rl-card-ondertitel">Fouten en knoppen bestaan niet alléén uit visuele aanwijzingen (bijv. rode kleur).</p>
+                                    <button id="aanwijzingen-button" class="rl-card-btn" onclick="switchDisplay('aanwijzingen-extra', 'aanwijzingen-button')">Meer info</button>
+                                </div>
+                            </div>
+                            <div id="aanwijzingen-extra" class="rl-card-extra" style="display: none;">
+                                <div class="rl-card-uitleg">
+                                    <h3 class="rl-card-extra-title">Uitleg</h3>
+                                    <p class="rl-card-extra-text">Door één aanwijzing te gebruiken is de kans groot dat hiermee bepaalde gebruikers uitgesloten worden. Gebruik altijd meerdere aanwijzingen.</p>
+                                </div>
+                                <div class="rl-card-tips">
+                                    <h3 class="rl-card-extra-title">Tips</h3>
+                                    <p class="rl-card-extra-text">Gebruik niet alleen aanwijzingen uit hetzelfde spectrum (visueel, auditief), maar combineer aanwijzingen uit verschillende spectrums.</p>
+                                </div>
+                                <div class="rl-card-code">
+                                    <h3 class="rl-card-extra-title">Code</h3>
+                                    <p class="rl-card-extra-text"><code>Voorbeeld code</code></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="rl-card">
+                        <div class="rl-card-content-wrapper">
+                            <div class="rl-card-content">
+                                <input type="checkbox" class="rl-cb" name="richtlijn-cb" id="cb4">
+                                <div class="rl-card-inner-content-wrapper">
+                                    <h3 class="rl-card-title">Voorlezen</h3>
+                                    <p class="rl-card-ondertitel">De inhoud kan worden voorgelezen door een toepassing op de site/app.</p>
+                                    <button id="voorlezen-button" class="rl-card-btn" onclick="switchDisplay('voorlezen-extra', 'voorlezen-button')">Meer info</button>
+                                </div>
+                            </div>
+                            <div id="voorlezen-extra" class="rl-card-extra" style="display: none;">
+                                <div class="rl-card-uitleg">
+                                    <h3 class="rl-card-extra-title">Uitleg</h3>
+                                    <p class="rl-card-extra-text">Voor het voorlezen hoeft geen speciale screenreader gebruikt te worden.</p>
+                                </div>
+                                <div class="rl-card-tips">
+                                    <h3 class="rl-card-extra-title">Tips</h3>
+                                    <p class="rl-card-extra-text">Geef duidelijk aan waar gebruikers de inhoud kunnen laten voorlezen.</p>
+                                </div>
+                                <div class="rl-card-code">
+                                    <h3 class="rl-card-extra-title">Code</h3>
+                                    <p class="rl-card-extra-text"><code>Voorbeeld code</code></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 5 -->
+                    <div class="rl-card">
+                        <div class="rl-card-content-wrapper">
+                            <div class="rl-card-content">
+                                <input type="checkbox" class="rl-cb" name="richtlijn-cb" id="cb5">
+                                <div class="rl-card-inner-content-wrapper">
+                                    <h3 class="rl-card-title">Suggesties</h3>
+                                    <p class="rl-card-ondertitel">Fouten of niet ingevulde velden zijn duidelijk aangegeven en er is, als dat kan, een suggestie voor verbetering.</p>
+                                    <button id="suggesties-button" class="rl-card-btn" onclick="switchDisplay('suggesties-extra', 'suggesties-button')">Meer info</button>
+                                </div>
+                            </div>
+                            <div id="suggesties-extra" class="rl-card-extra" style="display: none;">
+                                <div class="rl-card-uitleg">
+                                    <h3 class="rl-card-extra-title">Uitleg</h3>
+                                    <p class="rl-card-extra-text">Wanneer het niet duidelijk is welk ingevuld veld foutief is ingevuld kunnen gebruikers vastlopen.</p>
+                                </div>
+                                <div class="rl-card-tips">
+                                    <h3 class="rl-card-extra-title">Tips</h3>
+                                    <p class="rl-card-extra-text">Verrijk de foutmelding met een concreet invulvoorbeeld.</p>
+                                </div>
+                                <div class="rl-card-code">
+                                    <h3 class="rl-card-extra-title">Code</h3>
+                                    <p class="rl-card-extra-text"><code>Voorbeeld code</code></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 6 -->
+                    <div class="rl-card">
+                        <div class="rl-card-content-wrapper">
+                            <div class="rl-card-content">
+                                <input type="checkbox" class="rl-cb" name="richtlijn-cb" id="cb6">
+                                <div class="rl-card-inner-content-wrapper">
+                                    <h3 class="rl-card-title">Tekstgrootte</h3>
+                                    <p class="rl-card-ondertitel">Gebruikers kunnen de tekstgrootte aanpassen.</p>
+                                    <button id="tekstgrootte-button" class="rl-card-btn" onclick="switchDisplay('tekstgrootte-extra', 'tekstgrootte-button')">Meer info</button>
+                                </div>
+                            </div>
+                            <div id="tekstgrootte-extra" class="rl-card-extra" style="display: none;">
+                                <div class="rl-card-uitleg">
+                                    <h3 class="rl-card-extra-title">Uitleg</h3>
+                                    <p class="rl-card-extra-text">Door de teksten eenvoudig te vergroten kunnen mensen met een visuele beperking de inhoud beter waarnemen.</p>
+                                </div>
+                                <div class="rl-card-tips">
+                                    <h3 class="rl-card-extra-title">Tips</h3>
+                                    <p class="rl-card-extra-text">Geef duidelijk aan waar de gebruikers de tekstgrootte kunnen aanpassen.</p>
+                                </div>
+                                <div class="rl-card-code">
+                                    <h3 class="rl-card-extra-title">Code</h3>
+                                    <p class="rl-card-extra-text"><code>Voorbeeld code</code></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 7 -->
+                    <div class="rl-card">
+                        <div class="rl-card-content-wrapper">
+                            <div class="rl-card-content">
+                                <input type="checkbox" class="rl-cb" name="richtlijn-cb" id="cb7">
+                                <div class="rl-card-inner-content-wrapper">
+                                    <h3 class="rl-card-title">Vergroten</h3>
+                                    <p class="rl-card-ondertitel">De inhoud kan worden uitvergroot tot 200% zonder dat er inhoud uit het zicht verdwijnt.</p>
+                                    <button id="vergroten-button" class="rl-card-btn" onclick="switchDisplay('vergroten-extra', 'vergroten-button')">Meer info</button>
+                                </div>
+                            </div>
+                            <div id="vergroten-extra" class="rl-card-extra" style="display: none;">
+                                <div class="rl-card-uitleg">
+                                    <h3 class="rl-card-extra-title">Uitleg</h3>
+                                    <p class="rl-card-extra-text">Door de inhoud eenvoudig te vergroten kunnen mensen met een visuele beperking de inhoud beter waarnemen.</p>
+                                </div>
+                                <div class="rl-card-tips">
+                                    <h3 class="rl-card-extra-title">Tips</h3>
+                                    <p class="rl-card-extra-text">Geef deze eis duidelijk aan bij de ontwikkelaar van de website/app.</p>
+                                </div>
+                                <div class="rl-card-code">
+                                    <h3 class="rl-card-extra-title">Code</h3>
+                                    <p class="rl-card-extra-text"><code>Voorbeeld code</code></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div> <!-- Einde van Cards div -->
+            </article> <!-- Einde van Waarneembaar article-->
+
+            <!-- Robuust article -->
+            <article id="robuust" class="richtlijn-card-main blue">
+                <div class="rl-header">
+                    <h2 class="title-blue">Robuust</h2>
+                    <div class="rl-progress">
+                        <svg class="rl-icon" xmlns="http://www.w3.org/2000/svg" width="41.582" height="41.582" viewBox="0 0 41.582 41.582">
+                            <path id="XMLID_7_" d="M167.669-99.9a2.4,2.4,0,0,0-.682-1.741l-5.3-5.3a2.387,2.387,0,0,0-1.738-.683,2.394,2.394,0,0,0-1.811.83l.455.456a3.345,3.345,0,0,1,.528.529,3.043,3.043,0,0,1,.382.456,1.337,1.337,0,0,1,.3.683,2.18,2.18,0,0,1,.073.683,2.4,2.4,0,0,1-.682,1.741,2.386,2.386,0,0,1-1.738.683,2.169,2.169,0,0,1-.682-.073,2.777,2.777,0,0,1-.682-.3,2.61,2.61,0,0,1-.455-.382l-.528-.529a2.179,2.179,0,0,0-.455-.456,2.589,2.589,0,0,0-.828,1.9,2.4,2.4,0,0,0,.682,1.741l5.214,5.3a2.387,2.387,0,0,0,1.738.683,2.387,2.387,0,0,0,1.738-.683l3.777-3.71A2.717,2.717,0,0,0,167.669-99.9Zm-17.916-17.956a2.4,2.4,0,0,0-.682-1.741l-5.214-5.3a2.386,2.386,0,0,0-1.738-.683,2.51,2.51,0,0,0-1.738.683l-3.785,3.718a2.4,2.4,0,0,0-.682,1.741,2.4,2.4,0,0,0,.682,1.741l5.3,5.3a2.386,2.386,0,0,0,1.738.683,2.327,2.327,0,0,0,1.811-.757l-.455-.456a3.345,3.345,0,0,1-.528-.529,3.043,3.043,0,0,1-.382-.456,1.337,1.337,0,0,1-.3-.683,2.18,2.18,0,0,1-.073-.683,2.4,2.4,0,0,1,.682-1.741,2.386,2.386,0,0,1,1.738-.683,2.169,2.169,0,0,1,.682.073,2.776,2.776,0,0,1,.682.3,2.611,2.611,0,0,1,.455.382c.073.081.3.3.528.529a2.179,2.179,0,0,0,.455.456A2.547,2.547,0,0,0,149.753-117.857ZM172.582-99.9a6.877,6.877,0,0,1-2.193,5.15l-3.777,3.71a6.9,6.9,0,0,1-5.141,2.123,7.131,7.131,0,0,1-5.214-2.2l-5.214-5.3a6.926,6.926,0,0,1-2.12-5.15,7,7,0,0,1,2.266-5.3l-2.274-2.27a7.09,7.09,0,0,1-5.3,2.27A7.051,7.051,0,0,1,138.407-109l-5.3-5.3A7.087,7.087,0,0,1,131-119.525a6.865,6.865,0,0,1,2.193-5.15l3.777-3.71a6.894,6.894,0,0,1,5.141-2.115,7.131,7.131,0,0,1,5.214,2.2l5.214,5.3a6.926,6.926,0,0,1,2.12,5.15,7,7,0,0,1-2.266,5.3l2.266,2.27a7.09,7.09,0,0,1,5.3-2.27,7.051,7.051,0,0,1,5.214,2.123l5.3,5.3A7.148,7.148,0,0,1,172.582-99.9Z" transform="translate(-131 130.5)" fill="#fff"/>
+                        </svg>
+                        <p class="rl-count-blue">0/8</p>
+                    </div>
+                </div>
+
+                <!-- Checklist cards -->
+                <div class="rl-cards">
+
+                    <!-- Card 1 -->
+                    <div class="rl-card">
+                        <div class="rl-card-content-wrapper">
+                            <div class="rl-card-content">
+                                <input type="checkbox" class="rl-cb" name="richtlijn-cb" id="cb1">
+                                <div class="rl-card-inner-content-wrapper">
+                                    <h3 class="rl-card-title"></h3>
+                                    <p class="rl-card-ondertitel"></p>
+                                    <button id="-button" class="rl-card-btn" onclick="switchDisplay('-extra', '-button')">Meer info</button>
+                                </div>
+                            </div>
+                            <div id="-extra" class="rl-card-extra" style="display: none;">
+                                <div class="rl-card-uitleg">
+                                    <h3 class="rl-card-extra-title">Uitleg</h3>
+                                    <p class="rl-card-extra-text"></p>
+                                </div>
+                                <div class="rl-card-tips">
+                                    <h3 class="rl-card-extra-title">Tips</h3>
+                                    <p class="rl-card-extra-text"></p>
+                                </div>
+                                <div class="rl-card-code">
+                                    <h3 class="rl-card-extra-title">Code</h3>
+                                    <p class="rl-card-extra-text"><code>Voorbeeld code</code></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="rl-card">
+                        <div class="rl-card-content-wrapper">
+                            <div class="rl-card-content">
+                                <input type="checkbox" class="rl-cb" name="richtlijn-cb" id="cb2">
+                                <div class="rl-card-inner-content-wrapper">
+                                    <h3 class="rl-card-title"></h3>
+                                    <p class="rl-card-ondertitel"></p>
+                                    <button id="-button" class="rl-card-btn" onclick="switchDisplay('-extra', '-button')">Meer info</button>
+                                </div>
+                            </div>
+                            <div id="-extra" class="rl-card-extra" style="display: none;">
+                                <div class="rl-card-uitleg">
+                                    <h3 class="rl-card-extra-title">Uitleg</h3>
+                                    <p class="rl-card-extra-text"></p>
+                                </div>
+                                <div class="rl-card-tips">
+                                    <h3 class="rl-card-extra-title">Tips</h3>
+                                    <p class="rl-card-extra-text"></p>
+                                </div>
+                                <div class="rl-card-code">
+                                    <h3 class="rl-card-extra-title">Code</h3>
+                                    <p class="rl-card-extra-text"><code>Voorbeeld code</code></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="rl-card">
+                        <div class="rl-card-content-wrapper">
+                            <div class="rl-card-content">
+                                <input type="checkbox" class="rl-cb" name="richtlijn-cb" id="cb3">
+                                <div class="rl-card-inner-content-wrapper">
+                                    <h3 class="rl-card-title"></h3>
+                                    <p class="rl-card-ondertitel"></p>
+                                    <button id="-button" class="rl-card-btn" onclick="switchDisplay('-extra', '-button')">Meer info</button>
+                                </div>
+                            </div>
+                            <div id="-extra" class="rl-card-extra" style="display: none;">
+                                <div class="rl-card-uitleg">
+                                    <h3 class="rl-card-extra-title">Uitleg</h3>
+                                    <p class="rl-card-extra-text"></p>
+                                </div>
+                                <div class="rl-card-tips">
+                                    <h3 class="rl-card-extra-title">Tips</h3>
+                                    <p class="rl-card-extra-text"></p>
+                                </div>
+                                <div class="rl-card-code">
+                                    <h3 class="rl-card-extra-title">Code</h3>
+                                    <p class="rl-card-extra-text"><code>Voorbeeld code</code></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="rl-card">
+                        <div class="rl-card-content-wrapper">
+                            <div class="rl-card-content">
+                                <input type="checkbox" class="rl-cb" name="richtlijn-cb" id="cb4">
+                                <div class="rl-card-inner-content-wrapper">
+                                    <h3 class="rl-card-title"></h3>
+                                    <p class="rl-card-ondertitel"></p>
+                                    <button id="-button" class="rl-card-btn" onclick="switchDisplay('-extra', '-button')">Meer info</button>
+                                </div>
+                            </div>
+                            <div id="-extra" class="rl-card-extra" style="display: none;">
+                                <div class="rl-card-uitleg">
+                                    <h3 class="rl-card-extra-title">Uitleg</h3>
+                                    <p class="rl-card-extra-text"></p>
+                                </div>
+                                <div class="rl-card-tips">
+                                    <h3 class="rl-card-extra-title">Tips</h3>
+                                    <p class="rl-card-extra-text"></p>
+                                </div>
+                                <div class="rl-card-code">
+                                    <h3 class="rl-card-extra-title">Code</h3>
+                                    <p class="rl-card-extra-text"><code>Voorbeeld code</code></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 5 -->
+                    <div class="rl-card">
+                        <div class="rl-card-content-wrapper">
+                            <div class="rl-card-content">
+                                <input type="checkbox" class="rl-cb" name="richtlijn-cb" id="cb5">
+                                <div class="rl-card-inner-content-wrapper">
+                                    <h3 class="rl-card-title"></h3>
+                                    <p class="rl-card-ondertitel"></p>
+                                    <button id="-button" class="rl-card-btn" onclick="switchDisplay('-extra', '-button')">Meer info</button>
+                                </div>
+                            </div>
+                            <div id="-extra" class="rl-card-extra" style="display: none;">
+                                <div class="rl-card-uitleg">
+                                    <h3 class="rl-card-extra-title">Uitleg</h3>
+                                    <p class="rl-card-extra-text"></p>
+                                </div>
+                                <div class="rl-card-tips">
+                                    <h3 class="rl-card-extra-title">Tips</h3>
+                                    <p class="rl-card-extra-text"></p>
+                                </div>
+                                <div class="rl-card-code">
+                                    <h3 class="rl-card-extra-title">Code</h3>
+                                    <p class="rl-card-extra-text"><code>Voorbeeld code</code></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 6 -->
+                    <div class="rl-card">
+                        <div class="rl-card-content-wrapper">
+                            <div class="rl-card-content">
+                                <input type="checkbox" class="rl-cb" name="richtlijn-cb" id="cb6">
+                                <div class="rl-card-inner-content-wrapper">
+                                    <h3 class="rl-card-title"></h3>
+                                    <p class="rl-card-ondertitel"></p>
+                                    <button id="-button" class="rl-card-btn" onclick="switchDisplay('-extra', '-button')">Meer info</button>
+                                </div>
+                            </div>
+                            <div id="-extra" class="rl-card-extra" style="display: none;">
+                                <div class="rl-card-uitleg">
+                                    <h3 class="rl-card-extra-title">Uitleg</h3>
+                                    <p class="rl-card-extra-text"></p>
+                                </div>
+                                <div class="rl-card-tips">
+                                    <h3 class="rl-card-extra-title">Tips</h3>
+                                    <p class="rl-card-extra-text"></p>
+                                </div>
+                                <div class="rl-card-code">
+                                    <h3 class="rl-card-extra-title">Code</h3>
+                                    <p class="rl-card-extra-text"><code>Voorbeeld code</code></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 7 -->
+                    <div class="rl-card">
+                        <div class="rl-card-content-wrapper">
+                            <div class="rl-card-content">
+                                <input type="checkbox" class="rl-cb" name="richtlijn-cb" id="cb7">
+                                <div class="rl-card-inner-content-wrapper">
+                                    <h3 class="rl-card-title"></h3>
+                                    <p class="rl-card-ondertitel"></p>
+                                    <button id="-button" class="rl-card-btn" onclick="switchDisplay('-extra', '-button')">Meer info</button>
+                                </div>
+                            </div>
+                            <div id="-extra" class="rl-card-extra" style="display: none;">
+                                <div class="rl-card-uitleg">
+                                    <h3 class="rl-card-extra-title">Uitleg</h3>
+                                    <p class="rl-card-extra-text"></p>
+                                </div>
+                                <div class="rl-card-tips">
+                                    <h3 class="rl-card-extra-title">Tips</h3>
+                                    <p class="rl-card-extra-text"></p>
+                                </div>
+                                <div class="rl-card-code">
+                                    <h3 class="rl-card-extra-title">Code</h3>
+                                    <p class="rl-card-extra-text"><code>Voorbeeld code</code></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 8 -->
+                    <div class="rl-card">
+                        <div class="rl-card-content-wrapper">
+                            <div class="rl-card-content">
+                                <input type="checkbox" class="rl-cb" name="richtlijn-cb" id="cb8">
+                                <div class="rl-card-inner-content-wrapper">
+                                    <h3 class="rl-card-title"></h3>
+                                    <p class="rl-card-ondertitel"></p>
+                                    <button id="-button" class="rl-card-btn" onclick="switchDisplay('-extra', '-button')">Meer info</button>
+                                </div>
+                            </div>
+                            <div id="-extra" class="rl-card-extra" style="display: none;">
+                                <div class="rl-card-uitleg">
+                                    <h3 class="rl-card-extra-title">Uitleg</h3>
+                                    <p class="rl-card-extra-text"></p>
+                                </div>
+                                <div class="rl-card-tips">
+                                    <h3 class="rl-card-extra-title">Tips</h3>
+                                    <p class="rl-card-extra-text"></p>
+                                </div>
+                                <div class="rl-card-code">
+                                    <h3 class="rl-card-extra-title">Code</h3>
+                                    <p class="rl-card-extra-text"><code>Voorbeeld code</code></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div> <!-- Einde van Cards div -->
+            </article> <!-- Einde van Robuust article-->
+
+            <!-- Begrijpelijk article -->
+            <article id="begrijpelijk" class="richtlijn-card-main white">
+                <div class="rl-header">
+                    <h2 class="title-white">Begrijpelijk</h2>
+                    <div class="rl-progress">
+                        <svg class="rl-icon" xmlns="http://www.w3.org/2000/svg" width="32.886" height="57.613" viewBox="0 0 32.886 57.613">
+                            <path id="XMLID_7_" d="M109.464,16.807a1.306,1.306,0,0,1-.328.867.83.83,0,0,1-.743.383.867.867,0,0,1-.743-.383,1.109,1.109,0,0,1-.328-.867,3.012,3.012,0,0,0-1.727-2.69,6.627,6.627,0,0,0-3.376-.957.966.966,0,0,1-.743-.383,1.124,1.124,0,0,1-.328-.867,1.16,1.16,0,0,1,.328-.867.841.841,0,0,1,.743-.383,9.49,9.49,0,0,1,3.212.574,6.579,6.579,0,0,1,2.8,2.015A5.439,5.439,0,0,1,109.464,16.807Zm5.1,0a11.234,11.234,0,0,0-1.071-5,12.593,12.593,0,0,0-2.884-3.839,12.09,12.09,0,0,0-3.955-2.308,12.245,12.245,0,0,0-4.447-.867,11.467,11.467,0,0,0-4.36.867A15.221,15.221,0,0,0,93.894,7.97a11.6,11.6,0,0,0-2.884,3.839,11.284,11.284,0,0,0-1.148,5,10.829,10.829,0,0,0,2.219,6.72,15.607,15.607,0,0,1,.984,1.25c.415.574.743.957.984,1.25,2.72,3.839,4.283,7.587,4.524,11.144h7.322a21.853,21.853,0,0,1,4.524-11.144,15.612,15.612,0,0,0,.984-1.25c.415-.574.743-.957.984-1.25A11.038,11.038,0,0,0,114.567,16.807Zm4.119,0a16.04,16.04,0,0,1-3.29,10.086c-.984,1.25-1.727,2.308-2.383,3.264a23.7,23.7,0,0,0-1.891,3.557,11.624,11.624,0,0,0-1.071,4.03,3.919,3.919,0,0,1,.666,5.471,3.469,3.469,0,0,1,.82,2.4,3.607,3.607,0,0,1-1.486,3.073,4.34,4.34,0,0,1,.415,1.734,3.649,3.649,0,0,1-.984,2.69,3.264,3.264,0,0,1-2.47.957,5.7,5.7,0,0,1-1.891,2.589,5,5,0,0,1-2.8.957,4.4,4.4,0,0,1-2.8-.957,6.287,6.287,0,0,1-1.891-2.589,3.306,3.306,0,0,1-2.47-.957,3.756,3.756,0,0,1-1.148-2.69,4.43,4.43,0,0,1,.415-1.734,3.631,3.631,0,0,1-1.486-3.073,3.5,3.5,0,0,1,.82-2.4,3.919,3.919,0,0,1,.666-5.471,11.624,11.624,0,0,0-1.071-4.03,37,37,0,0,0-1.891-3.557,25.3,25.3,0,0,0-2.383-3.264A15.646,15.646,0,0,1,85.8,16.807a17.316,17.316,0,0,1,1.4-6.912A14.44,14.44,0,0,1,90.99,4.615,18.55,18.55,0,0,1,96.257,1.25,14.472,14.472,0,0,1,102.219,0a14.691,14.691,0,0,1,6.01,1.25A18.55,18.55,0,0,1,113.5,4.615a16.723,16.723,0,0,1,3.791,5.279A16.123,16.123,0,0,1,118.686,16.807Z" transform="translate(-85.8 0)" fill="#b9005f"/>
+                        </svg>                          
+                        <p class="rl-count">0/7</p>
+                    </div>
+                </div>
+
+                <!-- Checklist cards -->
+                <div class="rl-cards">
+
+                    <!-- Card 1 -->
+                    <div class="rl-card">
+                        <div class="rl-card-content-wrapper">
+                            <div class="rl-card-content">
+                                <input type="checkbox" class="rl-cb" name="richtlijn-cb" id="cb1">
+                                <div class="rl-card-inner-content-wrapper">
+                                    <h3 class="rl-card-title"></h3>
+                                    <p class="rl-card-ondertitel"></p>
+                                    <button id="-button" class="rl-card-btn" onclick="switchDisplay('-extra', '-button')">Meer info</button>
+                                </div>
+                            </div>
+                            <div id="-extra" class="rl-card-extra" style="display: none;">
+                                <div class="rl-card-uitleg">
+                                    <h3 class="rl-card-extra-title">Uitleg</h3>
+                                    <p class="rl-card-extra-text"></p>
+                                </div>
+                                <div class="rl-card-tips">
+                                    <h3 class="rl-card-extra-title">Tips</h3>
+                                    <p class="rl-card-extra-text"></p>
+                                </div>
+                                <div class="rl-card-code">
+                                    <h3 class="rl-card-extra-title">Code</h3>
+                                    <p class="rl-card-extra-text"><code>Voorbeeld code</code></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="rl-card">
+                        <div class="rl-card-content-wrapper">
+                            <div class="rl-card-content">
+                                <input type="checkbox" class="rl-cb" name="richtlijn-cb" id="cb2">
+                                <div class="rl-card-inner-content-wrapper">
+                                    <h3 class="rl-card-title"></h3>
+                                    <p class="rl-card-ondertitel"></p>
+                                    <button id="-button" class="rl-card-btn" onclick="switchDisplay('-extra', '-button')">Meer info</button>
+                                </div>
+                            </div>
+                            <div id="-extra" class="rl-card-extra" style="display: none;">
+                                <div class="rl-card-uitleg">
+                                    <h3 class="rl-card-extra-title">Uitleg</h3>
+                                    <p class="rl-card-extra-text"></p>
+                                </div>
+                                <div class="rl-card-tips">
+                                    <h3 class="rl-card-extra-title">Tips</h3>
+                                    <p class="rl-card-extra-text"></p>
+                                </div>
+                                <div class="rl-card-code">
+                                    <h3 class="rl-card-extra-title">Code</h3>
+                                    <p class="rl-card-extra-text"><code>Voorbeeld code</code></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="rl-card">
+                        <div class="rl-card-content-wrapper">
+                            <div class="rl-card-content">
+                                <input type="checkbox" class="rl-cb" name="richtlijn-cb" id="cb3">
+                                <div class="rl-card-inner-content-wrapper">
+                                    <h3 class="rl-card-title"></h3>
+                                    <p class="rl-card-ondertitel"></p>
+                                    <button id="-button" class="rl-card-btn" onclick="switchDisplay('-extra', '-button')">Meer info</button>
+                                </div>
+                            </div>
+                            <div id="-extra" class="rl-card-extra" style="display: none;">
+                                <div class="rl-card-uitleg">
+                                    <h3 class="rl-card-extra-title">Uitleg</h3>
+                                    <p class="rl-card-extra-text"></p>
+                                </div>
+                                <div class="rl-card-tips">
+                                    <h3 class="rl-card-extra-title">Tips</h3>
+                                    <p class="rl-card-extra-text"></p>
+                                </div>
+                                <div class="rl-card-code">
+                                    <h3 class="rl-card-extra-title">Code</h3>
+                                    <p class="rl-card-extra-text"><code>Voorbeeld code</code></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="rl-card">
+                        <div class="rl-card-content-wrapper">
+                            <div class="rl-card-content">
+                                <input type="checkbox" class="rl-cb" name="richtlijn-cb" id="cb4">
+                                <div class="rl-card-inner-content-wrapper">
+                                    <h3 class="rl-card-title"></h3>
+                                    <p class="rl-card-ondertitel"></p>
+                                    <button id="-button" class="rl-card-btn" onclick="switchDisplay('-extra', '-button')">Meer info</button>
+                                </div>
+                            </div>
+                            <div id="-extra" class="rl-card-extra" style="display: none;">
+                                <div class="rl-card-uitleg">
+                                    <h3 class="rl-card-extra-title">Uitleg</h3>
+                                    <p class="rl-card-extra-text"></p>
+                                </div>
+                                <div class="rl-card-tips">
+                                    <h3 class="rl-card-extra-title">Tips</h3>
+                                    <p class="rl-card-extra-text"></p>
+                                </div>
+                                <div class="rl-card-code">
+                                    <h3 class="rl-card-extra-title">Code</h3>
+                                    <p class="rl-card-extra-text"><code>Voorbeeld code</code></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 5 -->
+                    <div class="rl-card">
+                        <div class="rl-card-content-wrapper">
+                            <div class="rl-card-content">
+                                <input type="checkbox" class="rl-cb" name="richtlijn-cb" id="cb5">
+                                <div class="rl-card-inner-content-wrapper">
+                                    <h3 class="rl-card-title"></h3>
+                                    <p class="rl-card-ondertitel"></p>
+                                    <button id="-button" class="rl-card-btn" onclick="switchDisplay('-extra', '-button')">Meer info</button>
+                                </div>
+                            </div>
+                            <div id="-extra" class="rl-card-extra" style="display: none;">
+                                <div class="rl-card-uitleg">
+                                    <h3 class="rl-card-extra-title">Uitleg</h3>
+                                    <p class="rl-card-extra-text"></p>
+                                </div>
+                                <div class="rl-card-tips">
+                                    <h3 class="rl-card-extra-title">Tips</h3>
+                                    <p class="rl-card-extra-text"></p>
+                                </div>
+                                <div class="rl-card-code">
+                                    <h3 class="rl-card-extra-title">Code</h3>
+                                    <p class="rl-card-extra-text"><code>Voorbeeld code</code></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 6 -->
+                    <div class="rl-card">
+                        <div class="rl-card-content-wrapper">
+                            <div class="rl-card-content">
+                                <input type="checkbox" class="rl-cb" name="richtlijn-cb" id="cb6">
+                                <div class="rl-card-inner-content-wrapper">
+                                    <h3 class="rl-card-title"></h3>
+                                    <p class="rl-card-ondertitel"></p>
+                                    <button id="-button" class="rl-card-btn" onclick="switchDisplay('-extra', '-button')">Meer info</button>
+                                </div>
+                            </div>
+                            <div id="-extra" class="rl-card-extra" style="display: none;">
+                                <div class="rl-card-uitleg">
+                                    <h3 class="rl-card-extra-title">Uitleg</h3>
+                                    <p class="rl-card-extra-text"></p>
+                                </div>
+                                <div class="rl-card-tips">
+                                    <h3 class="rl-card-extra-title">Tips</h3>
+                                    <p class="rl-card-extra-text"></p>
+                                </div>
+                                <div class="rl-card-code">
+                                    <h3 class="rl-card-extra-title">Code</h3>
+                                    <p class="rl-card-extra-text"><code>Voorbeeld code</code></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 7 -->
+                    <div class="rl-card">
+                        <div class="rl-card-content-wrapper">
+                            <div class="rl-card-content">
+                                <input type="checkbox" class="rl-cb" name="richtlijn-cb" id="cb7">
+                                <div class="rl-card-inner-content-wrapper">
+                                    <h3 class="rl-card-title"></h3>
+                                    <p class="rl-card-ondertitel"></p>
+                                    <button id="-button" class="rl-card-btn" onclick="switchDisplay('-extra', '-button')">Meer info</button>
+                                </div>
+                            </div>
+                            <div id="-extra" class="rl-card-extra" style="display: none;">
+                                <div class="rl-card-uitleg">
+                                    <h3 class="rl-card-extra-title">Uitleg</h3>
+                                    <p class="rl-card-extra-text"></p>
+                                </div>
+                                <div class="rl-card-tips">
+                                    <h3 class="rl-card-extra-title">Tips</h3>
+                                    <p class="rl-card-extra-text"></p>
+                                </div>
+                                <div class="rl-card-code">
+                                    <h3 class="rl-card-extra-title">Code</h3>
+                                    <p class="rl-card-extra-text"><code>Voorbeeld code</code></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 8 -->
+                    <div class="rl-card">
+                        <div class="rl-card-content-wrapper">
+                            <div class="rl-card-content">
+                                <input type="checkbox" class="rl-cb" name="richtlijn-cb" id="cb8">
+                                <div class="rl-card-inner-content-wrapper">
+                                    <h3 class="rl-card-title"></h3>
+                                    <p class="rl-card-ondertitel"></p>
+                                    <button id="-button" class="rl-card-btn" onclick="switchDisplay('-extra', '-button')">Meer info</button>
+                                </div>
+                            </div>
+                            <div id="-extra" class="rl-card-extra" style="display: none;">
+                                <div class="rl-card-uitleg">
+                                    <h3 class="rl-card-extra-title">Uitleg</h3>
+                                    <p class="rl-card-extra-text"></p>
+                                </div>
+                                <div class="rl-card-tips">
+                                    <h3 class="rl-card-extra-title">Tips</h3>
+                                    <p class="rl-card-extra-text"></p>
+                                </div>
+                                <div class="rl-card-code">
+                                    <h3 class="rl-card-extra-title">Code</h3>
+                                    <p class="rl-card-extra-text"><code>Voorbeeld code</code></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div> <!-- Einde van Cards div -->
+            </article> <!-- Einde van Begrijpelijk article -->
+
+            <!-- Bedienbaar article -->
+            <article id="bedienbaar" class="richtlijn-card-main blue">
+                <div class="rl-header">
+                    <h2 class="title-blue">Bedienbaar</h2>
+                    <div class="rl-progress">
+                        <svg class="rl-icon" xmlns="http://www.w3.org/2000/svg" width="41.75" height="52.188" viewBox="0 0 41.75 52.188">
+                            <path id="Path_12" data-name="Path 12" d="M77.294,15.656a5.219,5.219,0,1,0-5.219-5.219A5.217,5.217,0,0,0,77.294,15.656ZM79.9,33.922h5.219A7.828,7.828,0,0,1,92.95,41.75V52.188H51.2V41.75a7.829,7.829,0,0,1,7.828-7.828H74.685V20.547a10.452,10.452,0,1,1,5.219,0ZM56.419,46.969H87.732V41.75a2.609,2.609,0,0,0-2.609-2.609H59.028a2.611,2.611,0,0,0-2.609,2.609Zm6.524-15.656h5.219a3.914,3.914,0,1,1,0,7.828H62.942a3.914,3.914,0,0,1,0-7.828Z" transform="translate(-51.2 0)" fill="#fff"/>
+                        </svg>                          
+                        <p class="rl-count-blue">0/7</p>
+                    </div>
+                </div>
+
+                <!-- Checklist cards -->
+                <div class="rl-cards">
+
+                    <!-- Card 1 -->
+                    <div class="rl-card">
+                        <div class="rl-card-content-wrapper">
+                            <div class="rl-card-content">
+                                <input type="checkbox" class="rl-cb" name="richtlijn-cb" id="cb1">
+                                <div class="rl-card-inner-content-wrapper">
+                                    <h3 class="rl-card-title"></h3>
+                                    <p class="rl-card-ondertitel"></p>
+                                    <button id="-button" class="rl-card-btn" onclick="switchDisplay('-extra', '-button')">Meer info</button>
+                                </div>
+                            </div>
+                            <div id="-extra" class="rl-card-extra" style="display: none;">
+                                <div class="rl-card-uitleg">
+                                    <h3 class="rl-card-extra-title">Uitleg</h3>
+                                    <p class="rl-card-extra-text"></p>
+                                </div>
+                                <div class="rl-card-tips">
+                                    <h3 class="rl-card-extra-title">Tips</h3>
+                                    <p class="rl-card-extra-text"></p>
+                                </div>
+                                <div class="rl-card-code">
+                                    <h3 class="rl-card-extra-title">Code</h3>
+                                    <p class="rl-card-extra-text"><code>Voorbeeld code</code></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="rl-card">
+                        <div class="rl-card-content-wrapper">
+                            <div class="rl-card-content">
+                                <input type="checkbox" class="rl-cb" name="richtlijn-cb" id="cb2">
+                                <div class="rl-card-inner-content-wrapper">
+                                    <h3 class="rl-card-title"></h3>
+                                    <p class="rl-card-ondertitel"></p>
+                                    <button id="-button" class="rl-card-btn" onclick="switchDisplay('-extra', '-button')">Meer info</button>
+                                </div>
+                            </div>
+                            <div id="-extra" class="rl-card-extra" style="display: none;">
+                                <div class="rl-card-uitleg">
+                                    <h3 class="rl-card-extra-title">Uitleg</h3>
+                                    <p class="rl-card-extra-text"></p>
+                                </div>
+                                <div class="rl-card-tips">
+                                    <h3 class="rl-card-extra-title">Tips</h3>
+                                    <p class="rl-card-extra-text"></p>
+                                </div>
+                                <div class="rl-card-code">
+                                    <h3 class="rl-card-extra-title">Code</h3>
+                                    <p class="rl-card-extra-text"><code>Voorbeeld code</code></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="rl-card">
+                        <div class="rl-card-content-wrapper">
+                            <div class="rl-card-content">
+                                <input type="checkbox" class="rl-cb" name="richtlijn-cb" id="cb3">
+                                <div class="rl-card-inner-content-wrapper">
+                                    <h3 class="rl-card-title"></h3>
+                                    <p class="rl-card-ondertitel"></p>
+                                    <button id="-button" class="rl-card-btn" onclick="switchDisplay('-extra', '-button')">Meer info</button>
+                                </div>
+                            </div>
+                            <div id="-extra" class="rl-card-extra" style="display: none;">
+                                <div class="rl-card-uitleg">
+                                    <h3 class="rl-card-extra-title">Uitleg</h3>
+                                    <p class="rl-card-extra-text"></p>
+                                </div>
+                                <div class="rl-card-tips">
+                                    <h3 class="rl-card-extra-title">Tips</h3>
+                                    <p class="rl-card-extra-text"></p>
+                                </div>
+                                <div class="rl-card-code">
+                                    <h3 class="rl-card-extra-title">Code</h3>
+                                    <p class="rl-card-extra-text"><code>Voorbeeld code</code></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="rl-card">
+                        <div class="rl-card-content-wrapper">
+                            <div class="rl-card-content">
+                                <input type="checkbox" class="rl-cb" name="richtlijn-cb" id="cb4">
+                                <div class="rl-card-inner-content-wrapper">
+                                    <h3 class="rl-card-title"></h3>
+                                    <p class="rl-card-ondertitel"></p>
+                                    <button id="-button" class="rl-card-btn" onclick="switchDisplay('-extra', '-button')">Meer info</button>
+                                </div>
+                            </div>
+                            <div id="-extra" class="rl-card-extra" style="display: none;">
+                                <div class="rl-card-uitleg">
+                                    <h3 class="rl-card-extra-title">Uitleg</h3>
+                                    <p class="rl-card-extra-text"></p>
+                                </div>
+                                <div class="rl-card-tips">
+                                    <h3 class="rl-card-extra-title">Tips</h3>
+                                    <p class="rl-card-extra-text"></p>
+                                </div>
+                                <div class="rl-card-code">
+                                    <h3 class="rl-card-extra-title">Code</h3>
+                                    <p class="rl-card-extra-text"><code>Voorbeeld code</code></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 5 -->
+                    <div class="rl-card">
+                        <div class="rl-card-content-wrapper">
+                            <div class="rl-card-content">
+                                <input type="checkbox" class="rl-cb" name="richtlijn-cb" id="cb5">
+                                <div class="rl-card-inner-content-wrapper">
+                                    <h3 class="rl-card-title"></h3>
+                                    <p class="rl-card-ondertitel"></p>
+                                    <button id="-button" class="rl-card-btn" onclick="switchDisplay('-extra', '-button')">Meer info</button>
+                                </div>
+                            </div>
+                            <div id="-extra" class="rl-card-extra" style="display: none;">
+                                <div class="rl-card-uitleg">
+                                    <h3 class="rl-card-extra-title">Uitleg</h3>
+                                    <p class="rl-card-extra-text"></p>
+                                </div>
+                                <div class="rl-card-tips">
+                                    <h3 class="rl-card-extra-title">Tips</h3>
+                                    <p class="rl-card-extra-text"></p>
+                                </div>
+                                <div class="rl-card-code">
+                                    <h3 class="rl-card-extra-title">Code</h3>
+                                    <p class="rl-card-extra-text"><code>Voorbeeld code</code></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 6 -->
+                    <div class="rl-card">
+                        <div class="rl-card-content-wrapper">
+                            <div class="rl-card-content">
+                                <input type="checkbox" class="rl-cb" name="richtlijn-cb" id="cb6">
+                                <div class="rl-card-inner-content-wrapper">
+                                    <h3 class="rl-card-title"></h3>
+                                    <p class="rl-card-ondertitel"></p>
+                                    <button id="-button" class="rl-card-btn" onclick="switchDisplay('-extra', '-button')">Meer info</button>
+                                </div>
+                            </div>
+                            <div id="-extra" class="rl-card-extra" style="display: none;">
+                                <div class="rl-card-uitleg">
+                                    <h3 class="rl-card-extra-title">Uitleg</h3>
+                                    <p class="rl-card-extra-text"></p>
+                                </div>
+                                <div class="rl-card-tips">
+                                    <h3 class="rl-card-extra-title">Tips</h3>
+                                    <p class="rl-card-extra-text"></p>
+                                </div>
+                                <div class="rl-card-code">
+                                    <h3 class="rl-card-extra-title">Code</h3>
+                                    <p class="rl-card-extra-text"><code>Voorbeeld code</code></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 7 -->
+                    <div class="rl-card">
+                        <div class="rl-card-content-wrapper">
+                            <div class="rl-card-content">
+                                <input type="checkbox" class="rl-cb" name="richtlijn-cb" id="cb7">
+                                <div class="rl-card-inner-content-wrapper">
+                                    <h3 class="rl-card-title"></h3>
+                                    <p class="rl-card-ondertitel"></p>
+                                    <button id="-button" class="rl-card-btn" onclick="switchDisplay('-extra', '-button')">Meer info</button>
+                                </div>
+                            </div>
+                            <div id="-extra" class="rl-card-extra" style="display: none;">
+                                <div class="rl-card-uitleg">
+                                    <h3 class="rl-card-extra-title">Uitleg</h3>
+                                    <p class="rl-card-extra-text"></p>
+                                </div>
+                                <div class="rl-card-tips">
+                                    <h3 class="rl-card-extra-title">Tips</h3>
+                                    <p class="rl-card-extra-text"></p>
+                                </div>
+                                <div class="rl-card-code">
+                                    <h3 class="rl-card-extra-title">Code</h3>
+                                    <p class="rl-card-extra-text"><code>Voorbeeld code</code></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 8 -->
+                    <div class="rl-card">
+                        <div class="rl-card-content-wrapper">
+                            <div class="rl-card-content">
+                                <input type="checkbox" class="rl-cb" name="richtlijn-cb" id="cb8">
+                                <div class="rl-card-inner-content-wrapper">
+                                    <h3 class="rl-card-title"></h3>
+                                    <p class="rl-card-ondertitel"></p>
+                                    <button id="-button" class="rl-card-btn" onclick="switchDisplay('-extra', '-button')">Meer info</button>
+                                </div>
+                            </div>
+                            <div id="-extra" class="rl-card-extra" style="display: none;">
+                                <div class="rl-card-uitleg">
+                                    <h3 class="rl-card-extra-title">Uitleg</h3>
+                                    <p class="rl-card-extra-text"></p>
+                                </div>
+                                <div class="rl-card-tips">
+                                    <h3 class="rl-card-extra-title">Tips</h3>
+                                    <p class="rl-card-extra-text"></p>
+                                </div>
+                                <div class="rl-card-code">
+                                    <h3 class="rl-card-extra-title">Code</h3>
+                                    <p class="rl-card-extra-text"><code>Voorbeeld code</code></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div> <!-- Einde van Cards div -->
+            </article> <!-- Einde van Bedienbaar article -->
+
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="contact-container">
+            <div class="adres">
+                <svg class="footer-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"><path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 256c-35.3 0-64-28.7-64-64s28.7-64 64-64s64 28.7 64 64s-28.7 64-64 64z"/></svg>
+                <div class="adres-text">
+                    <p class="contact-text">Vervoerregio</p>
+                    <p class="contact-text">Jodenbreestraat 25</p>
+                    <p class="contact-text">1011 NH Amsterdam</p>
+                </div>
+            </div>
+            <div class="adres">
+                <svg class="footer-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M501.6 4.186c-7.594-5.156-17.41-5.594-25.44-1.063L12.12 267.1C4.184 271.7-.5037 280.3 .0431 289.4c.5469 9.125 6.234 17.16 14.66 20.69l153.3 64.38v113.5c0 8.781 4.797 16.84 12.5 21.06C184.1 511 188 512 191.1 512c4.516 0 9.038-1.281 12.99-3.812l111.2-71.46l98.56 41.4c2.984 1.25 6.141 1.875 9.297 1.875c4.078 0 8.141-1.031 11.78-3.094c6.453-3.625 10.88-10.06 11.95-17.38l64-432C513.1 18.44 509.1 9.373 501.6 4.186zM369.3 119.2l-187.1 208.9L78.23 284.7L369.3 119.2zM215.1 444v-49.36l46.45 19.51L215.1 444zM404.8 421.9l-176.6-74.19l224.6-249.5L404.8 421.9z"/></svg>
+                <div class="adres-text">
+                    <p class="contact-text">Postbus 626</p>
+                    <p class="contact-text">1000 AP Amsterdam</p>
+                </div>
+            </div>
+            <div class="adres">
+                <div class="svg-container">
+                    <svg class="footer-svg-phone" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M164.9 24.6c-7.7-18.6-28-28.5-47.4-23.2l-88 24C12.1 30.2 0 46 0 64C0 311.4 200.6 512 448 512c18 0 33.8-12.1 38.6-29.5l24-88c5.3-19.4-4.6-39.7-23.2-47.4l-96-40c-16.3-6.8-35.2-2.1-46.3 11.6L304.7 368C234.3 334.7 177.3 277.7 144 207.3L193.3 167c13.7-11.2 18.4-30 11.6-46.3l-40-96z"/></svg>  
+                    <svg class="footer-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M0 128C0 92.65 28.65 64 64 64H448C483.3 64 512 92.65 512 128V384C512 419.3 483.3 448 448 448H64C28.65 448 0 419.3 0 384V128zM48 128V150.1L220.5 291.7C241.1 308.7 270.9 308.7 291.5 291.7L464 150.1V127.1C464 119.2 456.8 111.1 448 111.1H64C55.16 111.1 48 119.2 48 127.1L48 128zM48 212.2V384C48 392.8 55.16 400 64 400H448C456.8 400 464 392.8 464 384V212.2L322 328.8C283.6 360.3 228.4 360.3 189.1 328.8L48 212.2z"/></svg>
+                </div>
+                <div class="adres-text">
+                    <p class="contact-text">020-5273700</p>
+                    <p class="contact-text">info@vervoerregio.nl</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="./scripts/script.js"></script>
+</body>
+</html>

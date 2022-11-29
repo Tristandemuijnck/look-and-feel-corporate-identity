@@ -202,6 +202,10 @@
         background: var(--gradient-magenta);
     }
 
+    .blue{
+        background: var(--blauw);
+    }
+
     .title-magenta{
         color: var(--wit);
         margin-bottom: 0.5em;
@@ -211,6 +215,13 @@
 
     .title-white{
         color: var(--magenta);
+        margin-bottom: 0.5em;
+        font-family: 'Fira Sans', sans-serif;
+        font-weight: 500;
+    }
+
+    .title-blue{
+        color: var(--wit);
         margin-bottom: 0.5em;
         font-family: 'Fira Sans', sans-serif;
         font-weight: 500;
@@ -372,6 +383,146 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+
+/*-------------------------RICHTLIJNEN-------------------------------*/
+    .richtlijn-card-main{
+        padding: 1em;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .rl-header>.title-white{
+        padding: 0 0.5em;
+    }
+
+    .rl-header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1em;
+        margin-top: 1em;
+    }
+
+    .rl-progress{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .rl-icon{
+        width: 2em;
+        height: 2em;
+        fill: var(--magenta);
+    }
+
+    .rl-count{
+        color: var(--magenta);
+        font-size: 1rem;
+    }
+
+    .rl-count-blue{
+        color: var(--wit);
+        font-size: 1rem;
+    }
+
+    .rl-cards{
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+    }
+
+    .rl-card{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        /* border: solid 1px var(--magenta); */
+        border-radius: var(--button-border-radius);
+        background: var(--grijs);
+        gap: 1em;
+        padding: 0.5em;
+        box-shadow: -1px 5px 5px -7px #000000, 0px 0px 3px 2px rgb(0 0 0 / 0%);
+    }
+
+    .rl-card-content-wrapper{
+        display: flex;
+        flex-direction: column;
+        gap: 0.5em;
+        width: 100%;
+    }
+
+    .rl-card-content{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        /* justify-content: space-around; */
+        gap: 1em;
+    }
+
+    .rl-cb{
+        width: 4em;
+        height: 4em;
+    }
+
+    .rl-card-inner-content-wrapper{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .rl-card-title{
+        font-weight: 500;
+        margin: 0.6em 0;
+    }
+
+    .rl-card-ondertitel{
+        font-weight: 400;
+    }
+
+    .rl-card-btn{
+        margin-top: 0.7em;
+        display: flex;
+        margin-left: auto;
+        border: none;
+        border-radius: var(--button-border-radius);
+        background: var(--gradient-magenta);
+        color: var(--wit);
+        padding: var(--button-padding);
+    }
+
+    .rl-card-extra{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        border-radius: 0.3em;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        row-gap: 1em;
+    }
+
+    .rl-card-uitleg{
+        border: solid 1px #b9005f;
+        border-radius: 0.1em;
+        padding: 0.7em;
+    }
+
+    .rl-card-tips{
+        border: solid 1px #b9005f;
+        border-radius: 0.1em;
+        padding: 0.7em;
+    }
+
+    .rl-card-code{
+        border: solid 1px #b9005f;
+        border-radius: 0.1em;
+        padding: 0.7em;
+    }
+
+    .rl-card-extra-title{
+        margin-bottom: 0.5em;
     }
 
 } /* Einde mobile styling */
