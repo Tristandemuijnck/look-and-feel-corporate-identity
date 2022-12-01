@@ -20,7 +20,7 @@ TODO
 <!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met Javascript gedaan en hoe? Misschien heb je een framwork of library gebruikt? -->
 
 ## Live versie
-Voor een live versie van het project: http://tristanva.student.fdnd.nl/
+Voor een live versie van het project: https://tristanva.student.fdnd.nl/
 
 ## Licentie
 
