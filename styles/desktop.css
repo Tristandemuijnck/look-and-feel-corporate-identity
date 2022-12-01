@@ -81,8 +81,7 @@
     }
 
     #primaire-nav{
-        display: block;
-        
+        display: block;      
     }
 
     .menu-toggle{
@@ -102,7 +101,7 @@
         background: var(--gradient-magenta);
         display: flex;
         text-align: left;
-        padding: 2em;
+        padding: 5em 2em;
         align-items: flex-start;
     }
 
@@ -126,6 +125,8 @@
         font-weight: 400;
         font-size: 1rem;
         line-height: 1.4rem;
+        width: auto;
+        max-width: 30rem;
     }
 
     .hero-buttons{
@@ -168,6 +169,11 @@
         height: auto;
     }
 
+    .access-icon2{
+        width: 8em;
+        height: auto;
+    }
+
     /* Richtlijnen section */
     #richtlijnen{
         background-color: var(--wit);
@@ -183,6 +189,28 @@
 
     .richtlijn-card{
         padding: 2em;
+    }
+
+    .white{
+        background: var(--wit);
+    }
+
+    .blue{
+        background: var(--blauw);
+    }
+
+    .title-white{
+        color: var(--magenta);
+        margin-bottom: 0.5em;
+        font-family: 'Fira Sans', sans-serif;
+        font-weight: 500;
+    }
+
+    .title-blue{
+        color: var(--wit);
+        margin-bottom: 0.5em;
+        font-family: 'Fira Sans', sans-serif;
+        font-weight: 500;
     }
 
     #waarneembaar, #begrijpelijk{
@@ -204,6 +232,7 @@
     .title-white, .title-magenta{
         color: var(--magenta);
         padding-right: 3%;
+        padding-left: 3%;
     }
 
     .p-white{
@@ -212,7 +241,7 @@
         border: none;
         border-top-right-radius: 2em;
         border-bottom-right-radius: 2em;
-        max-width: 66%;
+        max-width: 50%;
         color: var(--wit);
     }
 
@@ -222,7 +251,7 @@
         border: none;
         border-top-left-radius: 2em;
         border-bottom-left-radius: 2em;
-        max-width: 66%;
+        max-width: 50%;
         color: var(--wit);
     }
 
@@ -244,6 +273,7 @@
         margin-top: 2em;
         overflow-x: auto;
         margin-bottom: 2em;
+        margin: 2em 3%;
     }
 
     .card{
@@ -294,6 +324,7 @@
         font-family: 'Fira Sans';
         font-weight: 500;
         font-size: 2.3rem;
+        padding-left: 3%;
     }
 
     .cta-btn{
@@ -303,6 +334,7 @@
         border: none;
         border-radius: var(--button-border-radius);
         box-shadow: 1px 1px 5px -1px #000000;
+        margin-right: 3%;
     }
 
     .cta-btn a{
@@ -377,5 +409,175 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+
+/*-------------------------RICHTLIJNEN-------------------------------*/
+
+    .richtlijn-card-main{
+        padding: 1em;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .rl-header>.title-white{
+        padding: 0 0.5em;
+    }
+
+    .rl-header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1em;
+        margin-top: 1em;
+        width: 85%;
+        margin: 1em auto;
+    }
+
+    .rl-progress{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .rl-icon{
+        width: 2em;
+        height: 2em;
+        fill: var(--magenta);
+    }
+
+    .rl-count{
+        color: var(--magenta);
+        font-size: 1rem;
+    }
+
+    .rl-count-blue{
+        color: var(--wit);
+        font-size: 1rem;
+    }
+
+    .rl-cards{
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+        width: 85%;
+        max-width: 85%;
+        margin: 0 auto;
+        padding: 2em 0;
+    }
+
+    .rl-card{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        /* border: solid 1px var(--magenta); */
+        border-radius: var(--button-border-radius);
+        background: var(--grijs);
+        gap: 1em;
+        padding: 1em 2em;
+        box-shadow: 0px 7px 5px -7px #000000, 0px 0px 3px 2px rgb(0 0 0 / 0%);
+    }
+
+    .rl-card-content-wrapper{
+        display: flex;
+        flex-direction: column;
+        gap: 0.5em;
+        width: 100%;
+    }
+
+    .rl-card-content{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        /* justify-content: space-around; */
+        gap: 1em;
+    }
+
+    .rl-cb{
+        width: 4em;
+        height: 4em;
+    }
+
+    .rl-card-inner-content-wrapper{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .rl-card-title{
+        font-weight: 500;
+        margin: 0.6em 0;
+    }
+
+    .rl-card-ondertitel{
+        font-weight: 400;
+    }
+
+    .rl-card-btn{
+        margin-top: 0.7em;
+        display: flex;
+        margin-left: auto;
+        border: none;
+        border-radius: var(--button-border-radius);
+        background: var(--gradient-magenta);
+        color: var(--wit);
+        padding: var(--button-padding);
+    }
+
+    .rl-card-extra{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        border-radius: 0.3em;
+        margin-top: 1em;
+        margin-bottom: 1em;
+        column-gap: 1em;
+    }
+
+    .rl-card-uitleg{
+        border: solid 1px #b9005f;
+        border-radius: 0.1em;
+        padding: 0.7em;
+        width: 50%;
+        max-width: 50%;
+    }
+
+    .rl-card-tips{
+        border: solid 1px #b9005f;
+        border-radius: 0.1em;
+        padding: 0.7em;
+        width: 50%;
+        max-width: 50%;
+    }
+
+    .rl-card-code{
+        border: solid 1px #b9005f;
+        border-radius: 0.1em;
+        padding: 0.7em;
+    }
+
+    .rl-card-extra-title{
+        margin-bottom: 0.5em;
+    }
+
+    /* Back to top button */
+    .top-arrow-outer{
+        position: fixed;
+        bottom: 1em;
+        right: 2em;
+        background: var(--geel);
+        padding: 1em 1.2em;
+        border: none;
+        border-radius: 1.6em;
+        
+    }
+
+    .top-arrow-inner{
+        width: 2em;
+        height: auto;
+        aspect-ratio: 1/1;
+        fill: var(--wit);
     }
 }
