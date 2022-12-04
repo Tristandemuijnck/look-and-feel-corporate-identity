@@ -212,6 +212,10 @@ header #logo::after {
     font-weight: 500;
 }
 
+.p-white strong a, .p-magenta strong a{
+    text-decoration: underline;
+}
+
 /* Waarom section */
 #waarom-toegankelijk{
     background-color: var(--blauw);

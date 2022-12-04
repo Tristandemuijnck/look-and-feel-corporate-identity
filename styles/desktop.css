@@ -122,6 +122,10 @@
         color: var(--wit);
     }
 
+    .p-magenta strong a, .p-white strong a{
+        color: var(--wit);
+    }
+
     /* Waarom section */
     #waarom-toegankelijk{
         padding: 2em;

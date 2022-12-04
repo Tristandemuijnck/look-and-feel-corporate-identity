@@ -100,6 +100,14 @@
         font-weight: 400;
     }
 
+    .p-magenta strong a{
+        color: var(--wit);
+    }
+
+    .p-white strong a{
+        color: var(--magenta);
+    }
+
     /* Waarom section */
     #waarom-toegankelijk{
         padding: 2em 1em;
