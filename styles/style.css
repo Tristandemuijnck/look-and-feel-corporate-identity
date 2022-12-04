@@ -1,4 +1,6 @@
-/* CSS Variabelen */
+/* ------------------------------------------------ */
+/* -----------------CSS Variabelen----------------- */
+/* ------------------------------------------------ */
 :root {
   /* Standaard kleuren */
     --magenta: #b9005f;
@@ -14,7 +16,9 @@
     --button-border-radius: 0.3em;
 }
 
-/* Reset */
+/* ------------------------------------------------ */
+/* -------------------CSS Reset-------------------- */
+/* ------------------------------------------------ */
 * {
     margin: 0;
     padding: 0;
@@ -43,4 +47,448 @@ body {
     font: 100%/1.4 'Fira Sans Regular', sans-serif;
 }
 
+/* ------------------------------------------------ */
+/* -------------------Common css------------------- */
+/* ------------------------------------------------ */
 
+/* Header styling */
+header {
+    width: 100%;
+    height: auto;
+    display: block;
+    position: sticky;
+    top: 0;
+}
+
+header #logo{
+    width: auto;
+    height: 5em;
+    border: 4px solid #fff;
+    border-radius: 0 0 3em 0;
+    background-color: #fff;
+    position: absolute;
+    z-index: 1;
+}
+
+header #logo::after {
+    width: 1em;
+    aspect-ratio: 1/1;
+    background-color: #f72e96;
+}
+
+#logo svg {
+    position: relative;
+    z-index: -9;
+    height: 6em;
+    fill: #fff;
+}
+
+#after-curve {
+    width: 100%;
+    height: 2.5em;
+    background-color: #fff;
+    float: inline-end;
+    position: inherit;
+}
+
+#after-curve::before {
+    content: "";
+    width: 3.5em;
+    height: 3.5em;
+    position: absolute;
+    top: 2.5em;
+    box-shadow: 0.1em -1em 0 -0.2em white;
+    border-radius: 60% 0 0 0;
+}
+
+#curve {
+    width: 1em;
+    height: 2em;
+    display: block;
+    background-color: sierra;
+}
+
+/* Navigatie */
+.topnav a{
+    color: var(--magenta);
+}
+
+/* Banner image */
+.banner-image img{
+    width: 100%;
+    height: auto;
+    overflow-x: hidden;
+}
+
+/* Hero banner */
+#hero{
+    margin-top: -0.4em;
+    background: var(--gradient-magenta);
+    display: flex;
+    text-align: left;
+}
+
+.hero-title{
+    color: var(--wit);
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 500;
+    margin-bottom: 0.5em;
+    font-size: 2rem;
+    line-height: 2.8rem;
+}
+
+.hero-subtitle{
+    color: var(--wit);
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.4rem;
+}
+
+.hero-buttons{
+    display: flex;
+    flex-direction: row;
+    gap: 0.8em;
+    margin-top: 1em;
+}
+
+.hero-btn-cta{
+    background-color: var(--blauw);
+    border: none;
+    padding: var(--button-padding);
+    border-radius: var(--button-border-radius);
+    box-shadow: 1px 1px 5px -1px #000000;
+}
+
+.hero-btn-cta a{
+    color: var(--wit);
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+}
+
+.hero-btn-alt{
+    background-color: var(--wit);
+    border: none;
+    padding: var(--button-padding);
+    border-radius: var(--button-border-radius);
+    box-shadow: 1px 1px 5px -1px #000000;
+}
+
+.hero-btn-alt a{
+    color: var(--magenta);
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+}
+
+/* Richtlijnen section */
+.spacing-span{
+    display: block;
+    visibility: hidden;
+}
+
+.richtlijn-card{
+    padding: 2em;
+}
+
+.white{
+    background: var(--wit);
+}
+
+.blue{
+    background: var(--blauw);
+}
+
+.title-white{
+    color: var(--magenta);
+    margin-bottom: 0.5em;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 500;
+}
+
+.title-blue{
+    color: var(--wit);
+    margin-bottom: 0.5em;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 500;
+}
+
+/* Waarom section */
+#waarom-toegankelijk{
+    background-color: var(--blauw);
+}
+
+.cards{
+    display: flex;
+    gap: 2em;
+    margin-top: 2em;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--wit);
+    padding: 2em;
+    border-radius: var(--button-border-radius);
+}
+
+.card-title{
+    color: var(--blauw);
+    font-family: 'Fira Sans';
+    font-weight: 500;
+    text-align: center;
+}
+
+/* Call to action hero */
+#call-to-action-hero{
+    padding: 3em 2em;
+    background-color: var(--wit);
+}
+
+#call-to-action-hero>.title-white{
+    color: var(--magenta);
+}
+
+.title-small{
+    font-weight: 400;
+}
+
+.check-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.call-to-action{
+    color: var(--magenta);
+    font-family: 'Fira Sans';
+    font-weight: 500;
+}
+
+.cta-btn{
+    background: var(--gradient-magenta);
+    color: var(--wit);
+    padding: var(--button-padding);
+    border: none;
+    border-radius: var(--button-border-radius);
+    box-shadow: 1px 1px 5px -1px #000000;
+}
+
+.cta-btn a{
+    color: var(--wit);
+    font-family: 'Fira Sans';
+    font-weight: 400;
+}
+
+/* Footer */
+#footer{
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--magenta);
+}
+
+#footer::before{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3vh;
+    background-image: linear-gradient(90deg, #b9005f01 0 5%, var(--magenta) 95%);
+    margin-top: -1em;
+}
+
+.contact-container{
+    display: flex;
+    align-items: flex-start;
+    padding: 2em;
+}
+
+.adres{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin: 1em 0;
+}
+
+.adres-text{
+    padding-left: 0.2em;
+}
+
+.contact-text{
+    color: var(--wit);
+}
+
+.footer-svg{
+    width: 0.8em;
+    height: 0.8em;
+    margin-top: 3px;
+    fill: var(--wit);
+}
+
+.footer-svg-phone{
+    width: 0.8em;
+    margin-top: 0.3em;
+    margin-right: 0.2em;
+    margin-bottom: 0.4em;
+    fill: var(--wit);
+}
+
+.svg-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*------------RICHTLIJNEN CHECKLIST------------*/
+
+.richtlijn-card-main{
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+}
+
+.rl-header>.title-white{
+    padding: 0 0.5em;
+}
+
+.rl-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1em;
+    margin-top: 1em;
+}
+
+.rl-progress{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.rl-icon{
+    width: 2em;
+    height: 2em;
+    fill: var(--magenta);
+}
+
+.rl-count{
+    color: var(--magenta);
+    font-size: 1rem;
+}
+
+.rl-count-blue{
+    color: var(--wit);
+    font-size: 1rem;
+}
+
+.rl-cards{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+}
+
+.rl-card{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: var(--button-border-radius);
+    background: var(--grijs);
+    gap: 1em;
+}
+
+.rl-card-content-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    width: 100%;
+}
+
+.rl-card-content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1em;
+}
+
+.rl-cb{
+    width: 4em;
+    height: 4em;
+}
+
+.rl-card-inner-content-wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.rl-card-title{
+    font-weight: 500;
+    margin: 0.6em 0;
+}
+
+.rl-card-ondertitel{
+    font-weight: 400;
+}
+
+.rl-card-btn{
+    margin-top: 0.7em;
+    display: flex;
+    margin-left: auto;
+    border: none;
+    border-radius: var(--button-border-radius);
+    background: var(--gradient-magenta);
+    color: var(--wit);
+    padding: var(--button-padding);
+}
+
+.rl-card-extra{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    border-radius: 0.3em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.rl-card-uitleg{
+    border: solid 1px #b9005f;
+    border-radius: 0.1em;
+    padding: 0.7em;
+}
+
+.rl-card-tips{
+    border: solid 1px #b9005f;
+    border-radius: 0.1em;
+    padding: 0.7em;
+}
+
+.rl-card-code{
+    border: solid 1px #b9005f;
+    border-radius: 0.1em;
+    padding: 0.7em;
+}
+
+.rl-card-extra-title{
+    margin-bottom: 0.5em;
+}
+
+/* Back to top button */
+.top-arrow-outer{
+    position: fixed;
+    bottom: 1em;
+    right: 2em;
+    background: var(--geel);
+    border: none;        
+}
+
+.top-arrow-inner{
+    height: auto;
+    aspect-ratio: 1/1;
+    fill: var(--wit);
+}
