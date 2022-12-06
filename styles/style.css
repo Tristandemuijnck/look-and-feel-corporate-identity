@@ -158,9 +158,6 @@ header #logo::after {
     padding: var(--button-padding);
     border-radius: var(--button-border-radius);
     box-shadow: 1px 1px 5px -1px #000000;
-}
-
-.hero-btn-cta a{
     color: var(--wit);
     font-family: 'Fira Sans', sans-serif;
     font-weight: 400;
@@ -172,9 +169,6 @@ header #logo::after {
     padding: var(--button-padding);
     border-radius: var(--button-border-radius);
     box-shadow: 1px 1px 5px -1px #000000;
-}
-
-.hero-btn-alt a{
     color: var(--magenta);
     font-family: 'Fira Sans', sans-serif;
     font-weight: 400;
@@ -275,9 +269,6 @@ header #logo::after {
     border: none;
     border-radius: var(--button-border-radius);
     box-shadow: 1px 1px 5px -1px #000000;
-}
-
-.cta-btn a{
     color: var(--wit);
     font-family: 'Fira Sans';
     font-weight: 400;
