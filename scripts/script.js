@@ -1,11 +1,18 @@
-function toggleMenu(){
-    var menu = document.getElementById("primaire-nav");
-    if(menu.style.display == "block"){
-        menu.style.display = "none";
-    } else{
-        menu.style.display = "block";
-    }
-}
+// function toggleMenu(){
+//     var menu = document.getElementById("primaire-nav");
+//     if(menu.style.display == "block"){
+//         menu.style.display = "none";
+//     } else{
+//         menu.style.display = "block";
+//     }
+// }
+
+let menuBtn = document.getElementById('menu-btn');
+let primaireNav = document.getElementById('primaire-nav');
+
+menuBtn.addEventListener('click', () => {
+    primaireNav.classList.toggle("show");
+});
 
 function switchDisplay(id, buttonId){
     let elementId = document.getElementById(id);

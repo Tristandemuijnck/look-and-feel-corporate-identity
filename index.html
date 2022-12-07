@@ -18,15 +18,22 @@
         <img src="./assets/logo.png" alt="Logo Vervoerregio Amsterdam" id="logo">
         <div id="after-curve"></div>
         <div class="topnav">
-            <nav id="primaire-nav">
+            <nav id="primaire-nav" class="primaire-nav">
                 <a href="index.html">Home</a>
                 <a href="richtlijnen.html">Checklist</a>
             </nav>
-            <button class="menu-toggle">
+            <!-- <div class="menu-toggle">
                 <a href="javascript:void(0);" id="icon" onclick="toggleMenu()">
-                    <i class="fa fa-bars"></i>
+                    <label class="menu-label" for="menu-icon">Menu</label>
+                    <i name="menu-icon" class="fa fa-bars"></i>
                 </a>
+            </div> -->
+
+            <button class="menu-toggle" id="menu-btn">
+                <label class="menu-label" for="menu-icon">Menu</label>
+                <i name="menu-icon" class="fa fa-bars"></i>
             </button>
+
         </div>
     </header>
     

@@ -42,8 +42,17 @@
     }
 
     #primaire-nav{
-        display: none;
+        /* display: none; */
         padding-top: 2.5em;
+    }
+
+    .primaire-nav{
+        display: none;
+        /* padding-top: 2.5em; */
+    }
+
+    .topnav .show{
+        display: block;
     }
 
     .menu-toggle a{
@@ -51,11 +60,22 @@
         color: white;
     }
 
-    #icon {
-        background-color: var(--wit);
+    #menu-btn {
+        background-color: rgba(256, 256, 256, 0);
         position: absolute;
         top: 0;
         right: 0;
+        margin-right: 1em;
+        margin-top: 0.5em;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        border: none;
+    }
+
+    .menu-label{
+        color: black;
+        font-size: 0.6rem;
     }
 
     .fa-bars{

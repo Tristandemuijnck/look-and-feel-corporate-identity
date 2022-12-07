@@ -18,15 +18,22 @@
         <img src="./assets/logo.png" alt="Logo Vervoerregio Amsterdam" id="logo">
         <div id="after-curve"></div>
         <div class="topnav">
-            <nav id="primaire-nav">
+            <nav id="primaire-nav" class="primaire-nav">
                 <a href="index.html">Home</a>
                 <a href="richtlijnen.html">Checklist</a>
             </nav>
-            <div class="menu-toggle">
+            <!-- <div class="menu-toggle">
                 <a href="javascript:void(0);" id="icon" onclick="toggleMenu()">
-                    <i class="fa fa-bars"></i>
+                    <label class="menu-label" for="menu-icon">Menu</label>
+                    <i name="menu-icon" class="fa fa-bars"></i>
                 </a>
-            </div>
+            </div> -->
+
+            <button class="menu-toggle" id="menu-btn">
+                <label class="menu-label" for="menu-icon">Menu</label>
+                <i name="menu-icon" class="fa fa-bars"></i>
+            </button>
+
         </div>
     </header>
     
@@ -98,11 +105,11 @@
                             </div>
                             <div id="ondertiteling-extra" class="rl-card-extra" style="display: none;">
                                 <div class="rl-card-uitleg">
-                                    <h3 class="rl-card-extra-title">Uitleg</h3>
+                                    <h4 class="rl-card-extra-title">Uitleg</h4>
                                     <p class="rl-card-extra-text">Ondertiteling met de gesproken tekst en andere geluiden zorgt ervoor dat gebruikers met een auditieve beperking het filmpje kunnen volgen. Bovendien is een videobestand pas doorzoekbaar voor Google en andere zoekmachines als er audiodescriptie en ondertiteling aan is toegevoegd.</p>
                                 </div>
                                 <div class="rl-card-tips">
-                                    <h3 class="rl-card-extra-title">Tips</h3>
+                                    <h4 class="rl-card-extra-title">Tips</h4>
                                     <p class="rl-card-extra-text">De ene mediaplayer biedt meer toegankelijkheidsopties dan de andere. Kies voor multimediasoftware die is ingericht op toegankelijkheid. Daarnaast is Scribit.pro een handig online programma waarmee je video’s eenvoudig  kunt voorzien van ondertiteling, audiodescriptie en een tekstalternatief.</p>
                                 </div>
                             </div>                          
@@ -122,11 +129,11 @@
                             </div>
                             <div id="audiobeschrijving-extra" class="rl-card-extra" style="display: none;">
                                 <div class="rl-card-uitleg">
-                                    <h3 class="rl-card-extra-title">Uitleg</h3>
+                                    <h4 class="rl-card-extra-title">Uitleg</h4>
                                     <p class="rl-card-extra-text">In een audiobeschrijving vertelt een stem belangrijke visuele details die je niet kunt afleiden uit dat wat te horen is. Dat kan bijvoorbeeld gaan om handelingen, personages en scène veranderingen, maar ook om tekst die op het scherm te zien is. De audiobeschrijving is dus een aanvulling op wat al te horen is. De stem van de audiobeschrijving vertelt op de momenten dat er pauzes zijn in het filmpje.</p>
                                 </div>
                                 <div class="rl-card-tips">
-                                    <h3 class="rl-card-extra-title">Tips</h3>
+                                    <h4 class="rl-card-extra-title">Tips</h4>
                                     <p class="rl-card-extra-text">Als alle belangrijke visuele details ook af te leiden zijn uit het geluid is een audiobeschrijving niet verplicht. Bovendien kun je allen alleen een audiobeschrijving toevoegen als de audiotrack van de video zelf voldoende ‘rustmomenten’ heeft. De audiobeschrijving mag immers alleen tijdens die rustmomenten te horen zijn, omdat er anders twee stemmen door elkaar klinken.</p>
                                 </div>
                             </div>
@@ -146,11 +153,11 @@
                             </div>
                             <div id="aanwijzingen-extra" class="rl-card-extra" style="display: none;">
                                 <div class="rl-card-uitleg">
-                                    <h3 class="rl-card-extra-title">Uitleg</h3>
+                                    <h4 class="rl-card-extra-title">Uitleg</h4>
                                     <p class="rl-card-extra-text">Door één aanwijzing te gebruiken is de kans groot dat hiermee bepaalde gebruikers uitgesloten worden. Gebruik altijd meerdere aanwijzingen.</p>
                                 </div>
                                 <div class="rl-card-tips">
-                                    <h3 class="rl-card-extra-title">Tips</h3>
+                                    <h4 class="rl-card-extra-title">Tips</h4>
                                     <p class="rl-card-extra-text">Gebruik niet alleen aanwijzingen uit hetzelfde spectrum (visueel, auditief), maar combineer aanwijzingen uit verschillende spectrums.</p>
                                 </div>
                             </div>
@@ -170,11 +177,11 @@
                             </div>
                             <div id="voorlezen-extra" class="rl-card-extra" style="display: none;">
                                 <div class="rl-card-uitleg">
-                                    <h3 class="rl-card-extra-title">Uitleg</h3>
+                                    <h4 class="rl-card-extra-title">Uitleg</h4>
                                     <p class="rl-card-extra-text">Voor het voorlezen hoeft geen speciale screenreader gebruikt te worden.</p>
                                 </div>
                                 <div class="rl-card-tips">
-                                    <h3 class="rl-card-extra-title">Tips</h3>
+                                    <h4 class="rl-card-extra-title">Tips</h4>
                                     <p class="rl-card-extra-text">Geef duidelijk aan waar gebruikers de inhoud kunnen laten voorlezen.</p>
                                 </div>
                             </div>
@@ -194,11 +201,11 @@
                             </div>
                             <div id="suggesties-extra" class="rl-card-extra" style="display: none;">
                                 <div class="rl-card-uitleg">
-                                    <h3 class="rl-card-extra-title">Uitleg</h3>
+                                    <h4 class="rl-card-extra-title">Uitleg</h4>
                                     <p class="rl-card-extra-text">Wanneer het niet duidelijk is welk ingevuld veld foutief is ingevuld kunnen gebruikers vastlopen.</p>
                                 </div>
                                 <div class="rl-card-tips">
-                                    <h3 class="rl-card-extra-title">Tips</h3>
+                                    <h4 class="rl-card-extra-title">Tips</h4>
                                     <p class="rl-card-extra-text">Verrijk de foutmelding met een concreet invulvoorbeeld.</p>
                                 </div>
                             </div>
@@ -218,11 +225,11 @@
                             </div>
                             <div id="tekstgrootte-extra" class="rl-card-extra" style="display: none;">
                                 <div class="rl-card-uitleg">
-                                    <h3 class="rl-card-extra-title">Uitleg</h3>
+                                    <h4 class="rl-card-extra-title">Uitleg</h4>
                                     <p class="rl-card-extra-text">Door de teksten eenvoudig te vergroten kunnen mensen met een visuele beperking de inhoud beter waarnemen.</p>
                                 </div>
                                 <div class="rl-card-tips">
-                                    <h3 class="rl-card-extra-title">Tips</h3>
+                                    <h4 class="rl-card-extra-title">Tips</h4>
                                     <p class="rl-card-extra-text">Geef duidelijk aan waar de gebruikers de tekstgrootte kunnen aanpassen.</p>
                                 </div>
                             </div>
@@ -242,11 +249,11 @@
                             </div>
                             <div id="vergroten-extra" class="rl-card-extra" style="display: none;">
                                 <div class="rl-card-uitleg">
-                                    <h3 class="rl-card-extra-title">Uitleg</h3>
+                                    <h4 class="rl-card-extra-title">Uitleg</h4>
                                     <p class="rl-card-extra-text">Door de inhoud eenvoudig te vergroten kunnen mensen met een visuele beperking de inhoud beter waarnemen.</p>
                                 </div>
                                 <div class="rl-card-tips">
-                                    <h3 class="rl-card-extra-title">Tips</h3>
+                                    <h4 class="rl-card-extra-title">Tips</h4>
                                     <p class="rl-card-extra-text">Geef deze eis duidelijk aan bij de ontwikkelaar van de website/app.</p>
                                 </div>
                             </div>
@@ -285,11 +292,11 @@
                             </div>
                             <div id="structuur-extra" class="rl-card-extra" style="display: none;">
                                 <div class="rl-card-uitleg">
-                                    <h3 class="rl-card-extra-title">Uitleg</h3>
+                                    <h4 class="rl-card-extra-title">Uitleg</h4>
                                     <p class="rl-card-extra-text">Als een website “onder water” goed in elkaar zit, dan is de basis voor toegankelijkheid gelegd. Ontwikkelaars kunnen in de technische standaard WCAG 2.1 meer lezen over technieken die gebruikt kunnen worden om aan de toegankelijkheidseisen te voldoen.</p>
                                 </div>
                                 <div class="rl-card-tips">
-                                    <h3 class="rl-card-extra-title">Tips</h3>
+                                    <h4 class="rl-card-extra-title">Tips</h4>
                                     <p class="rl-card-extra-text">Voor het bouwen van websites zijn internationale standaarden ontwikkeld. Door de standaarden te volgen gebruik je de code op de manier waarop deze bedoeld is. Hulptechnologieën sluiten aan bij de ze standaarden.</p>
                                 </div>
                             </div>
@@ -309,11 +316,11 @@
                             </div>
                             <div id="spaties-extra" class="rl-card-extra" style="display: none;">
                                 <div class="rl-card-uitleg">
-                                    <h3 class="rl-card-extra-title">Uitleg</h3>
+                                    <h4 class="rl-card-extra-title">Uitleg</h4>
                                     <p class="rl-card-extra-text">Als je wilt dat jouw tekst in kolommen of in een tabel verschijnt, gebruik dan niet de spatiebalk of de tab-toets om dit te doen, omdat dit de tekst onbegrijpelijk maakt voor bezoekers die gebruik maken van assistentietechnologie. Kolommen die op deze manier worden aangemaakt worden rij voor rij gelezen, niet kolom voor kolom.</p>
                                 </div>
                                 <div class="rl-card-tips">
-                                    <h3 class="rl-card-extra-title">Tips</h3>
+                                    <h4 class="rl-card-extra-title">Tips</h4>
                                     <p class="rl-card-extra-text">Tabellen moeten gemaakt worden met de tabelfuncties van de editor in het CMS. Voor kolommen en woorden met letters die verder uit elkaar staan, moet CSS gebruikt worden.</p>
                                 </div>
                             </div>
@@ -333,11 +340,11 @@
                             </div>
                             <div id="tekstueel-extra" class="rl-card-extra" style="display: none;">
                                 <div class="rl-card-uitleg">
-                                    <h3 class="rl-card-extra-title">Uitleg</h3>
+                                    <h4 class="rl-card-extra-title">Uitleg</h4>
                                     <p class="rl-card-extra-text">Door afbeeldingen te voorzien van een tekstueel alternatief maak je ze dus toegankelijk voor bezoekers die de afbeeldingen niet kunnen zien. Ook zoekmachines zoals Google maken gebruik van tekstalternatieven bij het indexeren van websites.</p>
                                 </div>
                                 <div class="rl-card-tips">
-                                    <h3 class="rl-card-extra-title">Tips</h3>
+                                    <h4 class="rl-card-extra-title">Tips</h4>
                                     <p class="rl-card-extra-text">Een tekstueel alternatief werkt alleen als de beschrijving adequaat is. In veel gevallen gaat het om ‘vertellen wat je ziet’. Soms gaat het juist om ‘vertellen wat dit doet’, bijvoorbeeld bij een button in een formulier. En als een afbeelding geen informatie toevoegt, is het beter ook geen tekstalternatief te geven. Denk goed na over de tekstuele beschrijving. Iemand die alleen de tekstalternatieven ziet zou de informatie nog steeds moeten kunnen begrijpen en de website nog steeds moeten kunnen gebruiken.</p>
                                 </div>
                             </div>
@@ -357,11 +364,11 @@
                             </div>
                             <div id="alt-extra" class="rl-card-extra" style="display: none;">
                                 <div class="rl-card-uitleg">
-                                    <h3 class="rl-card-extra-title">Uitleg</h3>
+                                    <h4 class="rl-card-extra-title">Uitleg</h4>
                                     <p class="rl-card-extra-text">De alt-tekst beschrijft het doel of de richting van de afbeelding in plaats van de afbeelding zelf.</p>
                                 </div>
                                 <div class="rl-card-tips">
-                                    <h3 class="rl-card-extra-title">Tips</h3>
+                                    <h4 class="rl-card-extra-title">Tips</h4>
                                     <p class="rl-card-extra-text">Als de afbeelding in een link staat met een tekst erbij, dan is de afbeelding ook niet-informatief en ook dan volstaat een leeg alt-attribuut. De screenreader leest dan de linktekst op. Als de afbeelding aanklikbaar is en in de link staat geen tekst, dan gebruik je wel een alt-tekst en beschrijf je waar de afbeelding naartoe linkt.</p>
                                 </div>
                             </div>
@@ -381,11 +388,11 @@
                             </div>
                             <div id="deco-extra" class="rl-card-extra" style="display: none;">
                                 <div class="rl-card-uitleg">
-                                    <h3 class="rl-card-extra-title">Uitleg</h3>
+                                    <h4 class="rl-card-extra-title">Uitleg</h4>
                                     <p class="rl-card-extra-text">Decoratieve afbeeldingen zijn niet relevant voor gebruikers van hulptechnologieën. De decoratieve afbeeldingen mogen de begrijpelijkheid niet beïnvloeden.</p>
                                 </div>
                                 <div class="rl-card-tips">
-                                    <h3 class="rl-card-extra-title">Tips</h3>
+                                    <h4 class="rl-card-extra-title">Tips</h4>
                                     <p class="rl-card-extra-text">Dit kan bijvoorbeeld door de alt-tekst leeg te laten.</p>
                                 </div>
                             </div>
@@ -405,11 +412,11 @@
                             </div>
                             <div id="alternatief-extra" class="rl-card-extra" style="display: none;">
                                 <div class="rl-card-uitleg">
-                                    <h3 class="rl-card-extra-title">Uitleg</h3>
+                                    <h4 class="rl-card-extra-title">Uitleg</h4>
                                     <p class="rl-card-extra-text">Alle vormen van audio en video moeten een kort tekstalternatief krijgen. Dit is vergelijkbaar met de alt-tekst van afbeeldingen. Door deze korte tekst weten bezoekers die hulptechnologie gebruiken, ook als de audio of video zelf niet toegankelijk zou zijn, in ieder geval waar ze mee te maken hebben.</p>
                                 </div>
                                 <div class="rl-card-tips">
-                                    <h3 class="rl-card-extra-title">Tips</h3>
+                                    <h4 class="rl-card-extra-title">Tips</h4>
                                     <p class="rl-card-extra-text">Hoe je dit alternatief plaatst hangt af van de techniek die gebruikt is om het multimediabestand op de webpagina te plaatsen.</p>
                                 </div>
                             </div>
@@ -429,11 +436,11 @@
                             </div>
                             <div id="transcript-extra" class="rl-card-extra" style="display: none;">
                                 <div class="rl-card-uitleg">
-                                    <h3 class="rl-card-extra-title">Uitleg</h3>
+                                    <h4 class="rl-card-extra-title">Uitleg</h4>
                                     <p class="rl-card-extra-text">In het transcript vertel je zo compleet mogelijk het verhaal van het filmpje. Je vertelt wat er gebeurt, dus wat er te zien en te horen is, en wat er gezegd wordt, door wie. Eventuele interactieve elementen neem je ook op in het transcript.</p>
                                 </div>
                                 <div class="rl-card-tips">
-                                    <h3 class="rl-card-extra-title">Tips</h3>
+                                    <h4 class="rl-card-extra-title">Tips</h4>
                                     <p class="rl-card-extra-text">Kun je in het filmpje bijvoorbeeld op een knop drukken, dan neem je in het transcript een link op naar de pagina waar je die actie kunt uitvoeren.</p>
                                 </div>
                             </div>
@@ -453,11 +460,11 @@
                             </div>
                             <div id="tabel-extra" class="rl-card-extra" style="display: none;">
                                 <div class="rl-card-uitleg">
-                                    <h3 class="rl-card-extra-title">Uitleg</h3>
+                                    <h4 class="rl-card-extra-title">Uitleg</h4>
                                     <p class="rl-card-extra-text">Gegevens in de tabel hebben zowel horizontaal als verticaal een relatie met elkaar. Met de juiste HTML-code kun je die relaties expliciet maken. Je geeft dan aan welke cellen koppen zijn en welke cellen gegevens bevatten. Bij complexe tabellen geef je ook nog eens aan welke kop precies bij welke cellen hoort. Bezoekers die hulptechnologie gebruiken hebben hier profijt van. Doordat de relaties in de code staan kan de hulptechnologie de informatie uit de tabel op een overzichtelijke en logische manier presenteren.</p>
                                 </div>
                                 <div class="rl-card-tips">
-                                    <h3 class="rl-card-extra-title">Tips</h3>
+                                    <h4 class="rl-card-extra-title">Tips</h4>
                                     <p class="rl-card-extra-text">Sommige tabellen zitten heel ingewikkeld in elkaar, met meerdere niveaus en koppen. Het kan dan nodig zijn om code toe te voegen aan de tabel om de verbanden duidelijk te maken. Stel jezelf echter de vraag of de tabel niet kan worden vereenvoudigd of gesplitst in meerdere tabellen.</p>
                                 </div>
                             </div>
@@ -496,11 +503,11 @@
                             </div>
                             <div id="taalniveau-extra" class="rl-card-extra" style="display: none;">
                                 <div class="rl-card-uitleg">
-                                    <h3 class="rl-card-extra-title">Uitleg</h3>
+                                    <h4 class="rl-card-extra-title">Uitleg</h4>
                                     <p class="rl-card-extra-text">Taalniveau B1 staat voor eenvoudig Nederlands. Een tekst op B1-niveau bestaat uit makkelijke woorden en uit korte, eenvoudige en actieve zinnen.</p>
                                 </div>
                                 <div class="rl-card-tips">
-                                    <h3 class="rl-card-extra-title">Tips</h3>
+                                    <h4 class="rl-card-extra-title">Tips</h4>
                                     <p class="rl-card-extra-text">Voor het schrijven van de teksten kan de redactie gebruik maken van een taaltool. Deze tool met het gemiddelde taalniveau van een tekst en geeft aan welke aanpassingen nodig zijn om het gewenste niveau te bereiken.</p>
                                 </div>
                             </div>
@@ -520,11 +527,11 @@
                             </div>
                             <div id="titel-extra" class="rl-card-extra" style="display: none;">
                                 <div class="rl-card-uitleg">
-                                    <h3 class="rl-card-extra-title">Uitleg</h3>
+                                    <h4 class="rl-card-extra-title">Uitleg</h4>
                                     <p class="rl-card-extra-text">De toegankelijkheid van teksten zit hem niet alleen in de structuur. Een toegankelijk tekst is ook begrijpelijk. Die begrijpelijkheid kun je vergroten door duidelijke titels en koppen te gebruiken.</p>
                                 </div>
                                 <div class="rl-card-tips">
-                                    <h3 class="rl-card-extra-title">Tips</h3>
+                                    <h4 class="rl-card-extra-title">Tips</h4>
                                     <p class="rl-card-extra-text">De titel van een pagina moet duidelijk beschrijven waar de pagina over gaat en (tussen-)kippen moeten het onderwerp of het doel van de paragrafen die erbij horen beschrijven.</p>
                                 </div>
                             </div>
@@ -544,11 +551,11 @@
                             </div>
                             <div id="koppen-extra" class="rl-card-extra" style="display: none;">
                                 <div class="rl-card-uitleg">
-                                    <h3 class="rl-card-extra-title">Uitleg</h3>
+                                    <h4 class="rl-card-extra-title">Uitleg</h4>
                                     <p class="rl-card-extra-text">De toegankelijkheid van teksten zit hem niet alleen in de structuur. Een toegankelijk tekst is ook begrijpelijk. Die begrijpelijkheid kun je vergroten door duidelijke titels en koppen te gebruiken.</p>
                                 </div>
                                 <div class="rl-card-tips">
-                                    <h3 class="rl-card-extra-title">Tips</h3>
+                                    <h4 class="rl-card-extra-title">Tips</h4>
                                     <p class="rl-card-extra-text">Vermijd grote lappen tekst. Grote lappen tekst zijn erg lastig te lezen voor gebruikers met een autismespectrum stoornis of gebruikers met dyslexie.</p>
                                 </div>
                             </div>
@@ -568,11 +575,11 @@
                             </div>
                             <div id="beschrijving-extra" class="rl-card-extra" style="display: none;">
                                 <div class="rl-card-uitleg">
-                                    <h3 class="rl-card-extra-title">Uitleg</h3>
+                                    <h4 class="rl-card-extra-title">Uitleg</h4>
                                     <p class="rl-card-extra-text">De tekstuele uitleg is niet alleen handig voor gebruikers met visuele beperkingen, maar een tekstuele uitleg is ook gelijk goed voor de vindbaarheid. Google kan de tekst indexeren.</p>
                                 </div>
                                 <div class="rl-card-tips">
-                                    <h3 class="rl-card-extra-title">Tips</h3>
+                                    <h4 class="rl-card-extra-title">Tips</h4>
                                     <p class="rl-card-extra-text">Plaats een bijschrift boven of onder de afbeelding.</p>
                                 </div>
                             </div>
@@ -592,11 +599,11 @@
                             </div>
                             <div id="tekst-extra" class="rl-card-extra" style="display: none;">
                                 <div class="rl-card-uitleg">
-                                    <h3 class="rl-card-extra-title">Uitleg</h3>
+                                    <h4 class="rl-card-extra-title">Uitleg</h4>
                                     <p class="rl-card-extra-text">Sommige gebruikers zullen de website bezoeken met behulp van een alleen-tekst browser, of kunnen afbeeldingen hebben uitgeschakeld in een gewone browser. Afbeeldingen van tekst veroorzaken problemen, omdat deze voor gebruikers moeilijker te begrijpen zijn. Afbeeldingen van tekst veroorzaken ook problemen voor gebruikers als ze het formaat van websites willen wijzigen om ze duidelijker te kunnen lezen, omdat afbeeldingen op deze manier niet goed werken. Ze dragen ook bij aan de tijd die nodig is om jouw website te laden, dat is ook vaak een reden waarom gebruikers een website verlaten, een kwestie van ongeduld.</p>
                                 </div>
                                 <div class="rl-card-tips">
-                                    <h3 class="rl-card-extra-title">Tips</h3>
+                                    <h4 class="rl-card-extra-title">Tips</h4>
                                     <p class="rl-card-extra-text">Uitzonderingen voor afbeeldingen van tekst zijn onderworpen aan richtlijnen voor kleur.</p>
                                 </div>
                             </div>
@@ -616,11 +623,11 @@
                             </div>
                             <div id="tabellen-extra" class="rl-card-extra" style="display: none;">
                                 <div class="rl-card-uitleg">
-                                    <h3 class="rl-card-extra-title">Uitleg</h3>
+                                    <h4 class="rl-card-extra-title">Uitleg</h4>
                                     <p class="rl-card-extra-text">Een bijschrijft of samenvatting geeft vooraf aan of de informatie in de tabel de moeite waar is om door te nemen. Gebruikers kunnen hun tijd en aandacht spenderen aan andere content op de website.</p>
                                 </div>
                                 <div class="rl-card-tips">
-                                    <h3 class="rl-card-extra-title">Tips</h3>
+                                    <h4 class="rl-card-extra-title">Tips</h4>
                                     <p class="rl-card-extra-text">Om het bijschrift of de samenvatting te verbinden aan de tabel moet je de juiste code gebruiken.</p>
                                 </div>
                             </div>
@@ -640,11 +647,11 @@
                             </div>
                             <div id="formulier-extra" class="rl-card-extra" style="display: none;">
                                 <!-- <div class="rl-card-uitleg">
-                                    <h3 class="rl-card-extra-title">Uitleg</h3>
+                                    <h4 class="rl-card-extra-title">Uitleg</h4>
                                     <p class="rl-card-extra-text"></p>
                                 </div> -->
                                 <div class="rl-card-tips">
-                                    <h3 class="rl-card-extra-title">Tips</h3>
+                                    <h4 class="rl-card-extra-title">Tips</h4>
                                     <p class="rl-card-extra-text">Zorg dat jouw bezoeker op de hoogte is van de wijziging die plaats gaat vinden. Informeren betekent dat je in tekst aangeeft wat er zal gebeuren als er een optie wordt geselecteerd of formulierveld wordt ingevuld. Voorkom ook dat een formulier automatisch wordt verzonden zodra het laatste veld is ingevuld. Maak bijvoorbeeld een verzendknop onder het formulier. Pas als de bezoeker de knop aanklikt, verandert de inhoud van de pagina.</p>
                                 </div>
                             </div>
@@ -683,11 +690,11 @@
                             </div>
                             <div id="captcha-extra" class="rl-card-extra" style="display: none;">
                                 <div class="rl-card-uitleg">
-                                    <h3 class="rl-card-extra-title">Uitleg</h3>
+                                    <h4 class="rl-card-extra-title">Uitleg</h4>
                                     <p class="rl-card-extra-text">Een toegankelijke CAPTCHA moet op zijn minst beschikbaar zijn als audiofragment welke je met het toetsenbord kan bereiken.</p>
                                 </div>
                                 <div class="rl-card-tips">
-                                    <h3 class="rl-card-extra-title">Tips</h3>
+                                    <h4 class="rl-card-extra-title">Tips</h4>
                                     <p class="rl-card-extra-text">Je kunt ook een vernieuwde CAPTCHA of andere controles gebruiken.</p>
                                 </div>
                             </div>
@@ -707,11 +714,11 @@
                             </div>
                             <div id="automatisch-extra" class="rl-card-extra" style="display: none;">
                                 <!-- <div class="rl-card-uitleg">
-                                    <h3 class="rl-card-extra-title">Uitleg</h3>
+                                    <h4 class="rl-card-extra-title">Uitleg</h4>
                                     <p class="rl-card-extra-text"></p>
                                 </div> -->
                                 <div class="rl-card-tips">
-                                    <h3 class="rl-card-extra-title">Tips</h3>
+                                    <h4 class="rl-card-extra-title">Tips</h4>
                                     <p class="rl-card-extra-text">Beter is om helemaal geen beeld en geluid te gebruiken dat automatisch start.</p>
                                 </div>
                             </div>
@@ -731,11 +738,11 @@
                             </div>
                             <div id="tijdslimiet-extra" class="rl-card-extra" style="display: none;">
                                 <div class="rl-card-uitleg">
-                                    <h3 class="rl-card-extra-title">Uitleg</h3>
+                                    <h4 class="rl-card-extra-title">Uitleg</h4>
                                     <p class="rl-card-extra-text">Sommige bezoekers hebben meer tijd dan gemiddeld nodig om gegevens in te vullen. Bijvoorbeeld omdat zij voorleessoftware gebruiken of dyslectisch zijn. Deze bezoekers moeten de tijdslimiet op kunnen heffen of verlengen.</p>
                                 </div>
                                 <div class="rl-card-tips">
-                                    <h3 class="rl-card-extra-title">Tips</h3>
+                                    <h4 class="rl-card-extra-title">Tips</h4>
                                     <p class="rl-card-extra-text">Zorg ervoor dat de gebruiker de tijdslimiet kan stopzetten, aanpassen of uitbreiden.</p>
                                 </div>
                             </div>
@@ -755,11 +762,11 @@
                             </div>
                             <div id="formulier2-extra" class="rl-card-extra" style="display: none;">
                                 <div class="rl-card-uitleg">
-                                    <h3 class="rl-card-extra-title">Uitleg</h3>
+                                    <h4 class="rl-card-extra-title">Uitleg</h4>
                                     <p class="rl-card-extra-text">Soms kan het verkeerd invullen van een formulier ingrijpende gevolgen hebben. Door bezoekers de mogelijkheid te bieden een inzending terug te trekken, help je hen grote fouten voorkomen.</p>
                                 </div>
                                 <div class="rl-card-tips">
-                                    <h3 class="rl-card-extra-title">Tips</h3>
+                                    <h4 class="rl-card-extra-title">Tips</h4>
                                     <p class="rl-card-extra-text">Let vooral op bij wettelijke en financiële transacties, hier zijn de gevolgen het grootst.</p>
                                 </div>
                             </div>
@@ -779,11 +786,11 @@
                             </div>
                             <div id="bediening-extra" class="rl-card-extra" style="display: none;">
                                 <div class="rl-card-uitleg">
-                                    <h3 class="rl-card-extra-title">Uitleg</h3>
+                                    <h4 class="rl-card-extra-title">Uitleg</h4>
                                     <p class="rl-card-extra-text">Een formulier wat bruikbaar is d.m.v. het toetsenbord zorgt voor een betere gebruikservaring.</p>
                                 </div>
                                 <div class="rl-card-tips">
-                                    <h3 class="rl-card-extra-title">Tips</h3>
+                                    <h4 class="rl-card-extra-title">Tips</h4>
                                     <p class="rl-card-extra-text">Gebruik een passende styling die bij de vormgeving past en ook nog eens toegankelijk is.</p>
                                 </div>
                             </div>
@@ -803,11 +810,11 @@
                             </div>
                             <div id="invoer-extra" class="rl-card-extra" style="display: none;">
                                 <div class="rl-card-uitleg">
-                                    <h3 class="rl-card-extra-title">Uitleg</h3>
+                                    <h4 class="rl-card-extra-title">Uitleg</h4>
                                     <p class="rl-card-extra-text">Stel jezelf als beheerder de vraag wat je van de gebruiker wilt vragen. Is een invoerveld noodzakelijk? Mogen gebruikers een typefoutje maken?</p>
                                 </div>
                                 <div class="rl-card-tips">
-                                    <h3 class="rl-card-extra-title">Tips</h3>
+                                    <h4 class="rl-card-extra-title">Tips</h4>
                                     <p class="rl-card-extra-text">Bied namen en alt-tekst aan invoervelden en groepeer bij elkaar horende velden, uiteraard met voldoende tussenruimte.</p>
                                 </div>
                             </div>
