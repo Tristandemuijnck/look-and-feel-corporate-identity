@@ -14,7 +14,7 @@ De tool is gemaakt voor de volgende user stories:
 > "Als vervoerregio wil ik de urgentie van de wettelijke verplichting duidelijk maken aan lezers"
 
 ### Preview
-TODO
+<img src="https://user-images.githubusercontent.com/43402897/206234525-ac75416d-715a-4c9d-844c-ecbc13acdb71.png" width=700>
 
 ## Kenmerken
 <!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met Javascript gedaan en hoe? Misschien heb je een framwork of library gebruikt? -->
