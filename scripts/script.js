@@ -15,24 +15,34 @@ var bedienbaarCheckboxes = document.querySelectorAll('#rl-bedienbaar input[type=
 waarneembaarCheckboxes.forEach((checkbox) => {
     checkbox.addEventListener('change', function () {
         countChecks(checkbox, this.closest(".rl-cards").parentElement.id);
+        this.closest(".rl-card").classList.toggle("rl-card-border");
+        let parentElement = this.closest(".rl-cards").parentElement.id;
+        let targetElement = document.getElementById(parentElement).querySelector('#waarneembaar-count');
+        targetElement.classList.toggle("countColor");
     });
 });
 
 robuustCheckboxes.forEach((checkbox) => {
     checkbox.addEventListener('change', function () {
         countChecks(checkbox, this.closest(".rl-cards").parentElement.id);
+        this.closest(".rl-card").classList.toggle("rl-card-border");
     });
 });
 
 begrijpelijkCheckboxes.forEach((checkbox) => {
     checkbox.addEventListener('change', function () {
         countChecks(checkbox, this.closest(".rl-cards").parentElement.id);
+        this.closest(".rl-card").classList.toggle("rl-card-border");
     });
 });
 
 bedienbaarCheckboxes.forEach((checkbox) => {
     checkbox.addEventListener('change', function () {
         countChecks(checkbox, this.closest(".rl-cards").parentElement.id);
+        this.closest(".rl-card").classList.toggle("rl-card-border");
+        let parentElement = this.closest(".rl-cards").parentElement.id; // rl-waarneembaar
+        let targetElement = document.getElementById(parentElement).querySelector('#waarneembaar-count');
+        targetElement.classList.toggle("countColor");
     });
 });
 

@@ -381,6 +381,11 @@ header #logo::after {
     font-size: 1rem;
 }
 
+.countColor{
+    color: var(--geel);
+    font-size: 1.7rem;
+}
+
 .rl-count-blue{
     color: var(--wit);
     font-size: 1rem;
@@ -401,7 +406,13 @@ header #logo::after {
     gap: 1em;
 }
 
+.rl-cb:checked{
+    accent-color: var(--magenta);
+}
 
+.rl-card-border{
+    border: 3px rgb(87, 234, 87) solid;
+}
 
 .rl-card-content-wrapper{
     display: flex;
