@@ -7,6 +7,7 @@
 //     }
 // }
 
+// Navigatie menu openen
 let menuBtn = document.getElementById('menu-btn');
 let primaireNav = document.getElementById('primaire-nav');
 
@@ -14,6 +15,37 @@ menuBtn.addEventListener('click', () => {
     primaireNav.classList.toggle("show");
 });
 
+// Checboxes tellen
+
+// Waarneember section
+let waarneembaarCheckboxes = document.getElementsByName('richtlijn-cb-waarneembaar');
+let numberOfCheckboxesWaarneembaar = 0;
+
+console.log(waarneembaarCheckboxes);
+
+for (let i = 0; i < waarneembaarCheckboxes.length; i++) {
+    waarneembaarCheckboxes[i].addEventListener('change', countChecks(waarneembaarCheckboxes[i])); 
+    console.log(waarneembaarCheckboxes[i]);
+}
+
+
+function countChecks(checkbox) {
+    if (checkbox.checked){
+        numberOfCheckboxesWaarneembaar++;
+    }
+
+    console.log(numberOfCheckboxesWaarneembaar);
+}
+ 
+
+// Robuust section
+
+// Begrijpelijk section
+
+// Bedienbaar section
+
+
+// Card openen
 function switchDisplay(id, buttonId){
     let elementId = document.getElementById(id);
     let button = document.getElementById(buttonId);

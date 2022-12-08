@@ -206,6 +206,10 @@ header #logo::after {
     font-weight: 500;
 }
 
+ #richtlijnen .title-magenta{
+    font-weight: 500;
+ }
+
 .p-white strong a, .p-magenta strong a{
     text-decoration: underline;
 }
@@ -231,7 +235,7 @@ header #logo::after {
 
 .card-title{
     color: var(--blauw);
-    font-family: 'Fira Sans';
+    font-family: 'Fira Sans', sans-serif;
     font-weight: 500;
     text-align: center;
 }
@@ -258,7 +262,7 @@ header #logo::after {
 
 .call-to-action{
     color: var(--magenta);
-    font-family: 'Fira Sans';
+    font-family: 'Fira Sans', sans-serif;
     font-weight: 500;
 }
 
@@ -270,7 +274,7 @@ header #logo::after {
     border-radius: var(--button-border-radius);
     box-shadow: 1px 1px 5px -1px #000000;
     color: var(--wit);
-    font-family: 'Fira Sans';
+    font-family: 'Fira Sans', sans-serif;
     font-weight: 400;
 }
 
