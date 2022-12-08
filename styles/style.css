@@ -401,6 +401,8 @@ header #logo::after {
     gap: 1em;
 }
 
+
+
 .rl-card-content-wrapper{
     display: flex;
     flex-direction: column;
@@ -447,12 +449,16 @@ header #logo::after {
 }
 
 .rl-card-extra{
-    display: flex;
+    display: none;
     flex-wrap: nowrap;
     justify-content: space-around;
     border-radius: 0.3em;
     margin-top: 1em;
     margin-bottom: 1em;
+}
+
+.showCard{
+    display: flex;
 }
 
 .rl-card-uitleg{
