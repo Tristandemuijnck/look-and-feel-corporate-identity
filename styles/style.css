@@ -382,8 +382,25 @@ header #logo::after {
 }
 
 .countColor{
-    color: var(--geel);
-    font-size: 1.7rem;
+    /* color: var(--geel); */
+    /* font-size: 1.7rem; */
+    animation: countColorAnimation 2s;
+}
+
+@keyframes countColorAnimation{
+    0% {
+        color: var(--magenta);
+        font-size: 1rem;
+    }
+    50% {
+        color: var(--geel);
+        font-size: 1.7rem;
+
+    }
+    100% {
+        color: var(--magenta);
+        font-size: 1rem;
+    }
 }
 
 .rl-count-blue{

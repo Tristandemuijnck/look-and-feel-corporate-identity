@@ -19,6 +19,20 @@ waarneembaarCheckboxes.forEach((checkbox) => {
         let parentElement = this.closest(".rl-cards").parentElement.id;
         let targetElement = document.getElementById(parentElement).querySelector('#waarneembaar-count');
         targetElement.classList.toggle("countColor");
+
+        // () => {
+        //     targetElement.classList.add("countColor");
+        //     setTimeout(() => {
+
+        //     }, 2000)
+        // }
+        // console.log(targetElement.classList.contains("countColor"))
+
+        // if (targetElement.classList.contains("countColor")){
+        //     targetElement.classList.remove("countColor");
+        // } else{
+        //     targetElement.classList.add("countColor");
+        // }
     });
 });
 
@@ -40,9 +54,6 @@ bedienbaarCheckboxes.forEach((checkbox) => {
     checkbox.addEventListener('change', function () {
         countChecks(checkbox, this.closest(".rl-cards").parentElement.id);
         this.closest(".rl-card").classList.toggle("rl-card-border");
-        let parentElement = this.closest(".rl-cards").parentElement.id; // rl-waarneembaar
-        let targetElement = document.getElementById(parentElement).querySelector('#waarneembaar-count');
-        targetElement.classList.toggle("countColor");
     });
 });
 
